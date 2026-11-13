@@ -1,0 +1,2398 @@
+{
+  "metadata": {
+    "fecha": "2026-11-11 16:28:59",
+    "tiempo_segundos": 37.57,
+    "total_ordenes_validas": 1853435,
+    "total_monto_limpio_clp": 18183716793468.312,
+    "total_proveedores": 75603,
+    "total_organismos": 1165,
+    "total_aristas": 476717,
+    "damping_factor": 0.85,
+    "max_supersteps": 30
+  },
+  "emulacion_pig": {
+    "top25_monto": [
+      {
+        "id_proveedor": "27693",
+        "rut_proveedor": "96.781.350-8",
+        "nombre_proveedor": "EDENRED CHILE SOCIEDAD ANONIMA",
+        "monto_total_clp": 507604761434.01636,
+        "n_ordenes": 5284,
+        "n_organismos_distintos": 463,
+        "ticket_promedio": 96064489.29485548,
+        "organismo_principal": {
+          "codigo_organismo": "7002",
+          "nombre_organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
+          "monto_clp": 403570899169.34,
+          "pct_ventas_proveedor": 79.5
+        }
+      },
+      {
+        "id_proveedor": "97685",
+        "rut_proveedor": "76.105.050-8",
+        "nombre_proveedor": "Salud y Vida S.A.",
+        "monto_total_clp": 480841714519.79,
+        "n_ordenes": 3,
+        "n_organismos_distintos": 1,
+        "ticket_promedio": 160280571506.59665,
+        "organismo_principal": {
+          "codigo_organismo": "7002",
+          "nombre_organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
+          "monto_clp": 480841714519.79,
+          "pct_ventas_proveedor": 100.0
+        }
+      },
+      {
+        "id_proveedor": "83487",
+        "rut_proveedor": "96.987.050-9",
+        "nombre_proveedor": "sosersa",
+        "monto_total_clp": 456447189870.75,
+        "n_ordenes": 6,
+        "n_organismos_distintos": 1,
+        "ticket_promedio": 76074531645.125,
+        "organismo_principal": {
+          "codigo_organismo": "7002",
+          "nombre_organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
+          "monto_clp": 456447189870.75,
+          "pct_ventas_proveedor": 100.0
+        }
+      },
+      {
+        "id_proveedor": "76304",
+        "rut_proveedor": "99.507.130-4",
+        "nombre_proveedor": "DAVITA CHILE S.A.",
+        "monto_total_clp": 330522229654.0,
+        "n_ordenes": 254,
+        "n_organismos_distintos": 25,
+        "ticket_promedio": 1301268620.6850393,
+        "organismo_principal": {
+          "codigo_organismo": "6954",
+          "nombre_organismo": "FONDO NACIONAL DE SALUD",
+          "monto_clp": 327776370676.0,
+          "pct_ventas_proveedor": 99.17
+        }
+      },
+      {
+        "id_proveedor": "22259",
+        "rut_proveedor": "79.690.660-k",
+        "nombre_proveedor": "COMERCIAL DE ALIMENTOS SOCIEDAD ANONIMA",
+        "monto_total_clp": 324992092160.4401,
+        "n_ordenes": 30,
+        "n_organismos_distintos": 6,
+        "ticket_promedio": 10833069738.681337,
+        "organismo_principal": {
+          "codigo_organismo": "7002",
+          "nombre_organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
+          "monto_clp": 324664977045.71,
+          "pct_ventas_proveedor": 99.9
+        }
+      },
+      {
+        "id_proveedor": "1500814",
+        "rut_proveedor": "76.549.864-3",
+        "nombre_proveedor": "MARCO ANTONIO",
+        "monto_total_clp": 324528356170.14996,
+        "n_ordenes": 24,
+        "n_organismos_distintos": 4,
+        "ticket_promedio": 13522014840.422915,
+        "organismo_principal": {
+          "codigo_organismo": "7002",
+          "nombre_organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
+          "monto_clp": 318045921420.23004,
+          "pct_ventas_proveedor": 98.0
+        }
+      },
+      {
+        "id_proveedor": "27211",
+        "rut_proveedor": "96.556.930-8",
+        "nombre_proveedor": "SODEXO SOLUCIONES DE MOTIVACION CHILE S.A.",
+        "monto_total_clp": 273638897108.30978,
+        "n_ordenes": 648,
+        "n_organismos_distintos": 52,
+        "ticket_promedio": 422282248.62393486,
+        "organismo_principal": {
+          "codigo_organismo": "7002",
+          "nombre_organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
+          "monto_clp": 252806363831.0,
+          "pct_ventas_proveedor": 92.39
+        }
+      },
+      {
+        "id_proveedor": "1408541",
+        "rut_proveedor": "59.144.380-1",
+        "nombre_proveedor": "IDEMIA IDENTITY &amp; SECURITY CHILE",
+        "monto_total_clp": 231218498127.27,
+        "n_ordenes": 7,
+        "n_organismos_distintos": 3,
+        "ticket_promedio": 33031214018.181427,
+        "organismo_principal": {
+          "codigo_organismo": "6960",
+          "nombre_organismo": "SERVICIO DE REGISTRO CIVIL E IDENTIFICACION",
+          "monto_clp": 229945373127.34,
+          "pct_ventas_proveedor": 99.45
+        }
+      },
+      {
+        "id_proveedor": "27324",
+        "rut_proveedor": "96.597.810-0",
+        "nombre_proveedor": "SERVICIOS ALIMENTICIOS HENDAYA SAC",
+        "monto_total_clp": 211808570094.81,
+        "n_ordenes": 3,
+        "n_organismos_distintos": 1,
+        "ticket_promedio": 70602856698.27,
+        "organismo_principal": {
+          "codigo_organismo": "7002",
+          "nombre_organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
+          "monto_clp": 211808570094.81,
+          "pct_ventas_proveedor": 100.0
+        }
+      },
+      {
+        "id_proveedor": "68073",
+        "rut_proveedor": "96.786.880-9",
+        "nombre_proveedor": "SACYR CHILE S A",
+        "monto_total_clp": 155381763537.84,
+        "n_ordenes": 2,
+        "n_organismos_distintos": 1,
+        "ticket_promedio": 77690881768.92,
+        "organismo_principal": {
+          "codigo_organismo": "7203",
+          "nombre_organismo": "SERVICIO DE SALUD METROPOLITANO SUR ORIENTE",
+          "monto_clp": 155381763537.84,
+          "pct_ventas_proveedor": 100.0
+        }
+      },
+      {
+        "id_proveedor": "37641",
+        "rut_proveedor": "96.827.370-1",
+        "nombre_proveedor": "COSEMAR S A",
+        "monto_total_clp": 147739643654.80988,
+        "n_ordenes": 111,
+        "n_organismos_distintos": 17,
+        "ticket_promedio": 1330987780.6739628,
+        "organismo_principal": {
+          "codigo_organismo": "87399",
+          "nombre_organismo": "I MUNICIPALIDAD DE VINA DEL MAR",
+          "monto_clp": 111994932915.0,
+          "pct_ventas_proveedor": 75.81
+        }
+      },
+      {
+        "id_proveedor": "50598",
+        "rut_proveedor": "96.872.930-6",
+        "nombre_proveedor": "SOC ADMINISTRADORA DE CASINOS Y SERVICIOS ALISERVICE S A",
+        "monto_total_clp": 131933090964.15996,
+        "n_ordenes": 236,
+        "n_organismos_distintos": 18,
+        "ticket_promedio": 559038521.034576,
+        "organismo_principal": {
+          "codigo_organismo": "7002",
+          "nombre_organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
+          "monto_clp": 114927960988.45001,
+          "pct_ventas_proveedor": 87.11
+        }
+      },
+      {
+        "id_proveedor": "24526",
+        "rut_proveedor": "82.999.400-3",
+        "nombre_proveedor": "ROCHE CHILE LIMITADA",
+        "monto_total_clp": 131800920459.65994,
+        "n_ordenes": 5091,
+        "n_organismos_distintos": 163,
+        "ticket_promedio": 25889004.215215076,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 65629258589.3,
+          "pct_ventas_proveedor": 49.79
+        }
+      },
+      {
+        "id_proveedor": "26963",
+        "rut_proveedor": "93.745.000-1",
+        "nombre_proveedor": "JOHNSON Y JOHNSON DE CHILE S A",
+        "monto_total_clp": 118561023217.7395,
+        "n_ordenes": 12431,
+        "n_organismos_distintos": 127,
+        "ticket_promedio": 9537529.017596291,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 60051210872.66,
+          "pct_ventas_proveedor": 50.65
+        }
+      },
+      {
+        "id_proveedor": "26741",
+        "rut_proveedor": "99.520.000-7",
+        "nombre_proveedor": "COPEC S.A.",
+        "monto_total_clp": 116145572214.92992,
+        "n_ordenes": 11018,
+        "n_organismos_distintos": 830,
+        "ticket_promedio": 10541438.756119978,
+        "organismo_principal": {
+          "codigo_organismo": "7248",
+          "nombre_organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+          "monto_clp": 13792086595.700003,
+          "pct_ventas_proveedor": 11.87
+        }
+      },
+      {
+        "id_proveedor": "24870",
+        "rut_proveedor": "85.025.700-0",
+        "nombre_proveedor": "GLAXOSMITHKLINE CHILE FARMACEUTICA LIMITADA",
+        "monto_total_clp": 104796378911.95999,
+        "n_ordenes": 1034,
+        "n_organismos_distintos": 144,
+        "ticket_promedio": 101350463.16437137,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 101170205914.4,
+          "pct_ventas_proveedor": 96.54
+        }
+      },
+      {
+        "id_proveedor": "39206",
+        "rut_proveedor": "88.277.600-k",
+        "nombre_proveedor": "DEMARCO S.A.",
+        "monto_total_clp": 94024857307.34,
+        "n_ordenes": 379,
+        "n_organismos_distintos": 45,
+        "ticket_promedio": 248086694.74232188,
+        "organismo_principal": {
+          "codigo_organismo": "87172",
+          "nombre_organismo": "I MUNICIPALIDAD DE PENALOLEN",
+          "monto_clp": 30176665662.0,
+          "pct_ventas_proveedor": 32.09
+        }
+      },
+      {
+        "id_proveedor": "219969",
+        "rut_proveedor": "76.377.430-9",
+        "nombre_proveedor": "Servitrans",
+        "monto_total_clp": 84610937057.0,
+        "n_ordenes": 15,
+        "n_organismos_distintos": 5,
+        "ticket_promedio": 5640729137.133333,
+        "organismo_principal": {
+          "codigo_organismo": "87382",
+          "nombre_organismo": "I MUNICIPALIDAD DE CONCEPCION",
+          "monto_clp": 48788503218.0,
+          "pct_ventas_proveedor": 57.66
+        }
+      },
+      {
+        "id_proveedor": "28150",
+        "rut_proveedor": "96.945.670-2",
+        "nombre_proveedor": "NOVOFARMA SERVICE S A",
+        "monto_total_clp": 73031581365.44014,
+        "n_ordenes": 3564,
+        "n_organismos_distintos": 269,
+        "ticket_promedio": 20491465.029584777,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 58034352147.30999,
+          "pct_ventas_proveedor": 79.46
+        }
+      },
+      {
+        "id_proveedor": "111095",
+        "rut_proveedor": "87.645.000-3",
+        "nombre_proveedor": "AKRO DISENOS S A",
+        "monto_total_clp": 68726351775.57999,
+        "n_ordenes": 32,
+        "n_organismos_distintos": 6,
+        "ticket_promedio": 2147698492.9868746,
+        "organismo_principal": {
+          "codigo_organismo": "93619",
+          "nombre_organismo": "I MUNICIPALIDAD DE MAIPU",
+          "monto_clp": 31480795286.0,
+          "pct_ventas_proveedor": 45.81
+        }
+      },
+      {
+        "id_proveedor": "47654",
+        "rut_proveedor": "77.237.150-0",
+        "nombre_proveedor": "COMERCIAL MEDTRONIC CHILE LTDA",
+        "monto_total_clp": 65090756295.87991,
+        "n_ordenes": 14571,
+        "n_organismos_distintos": 129,
+        "ticket_promedio": 4467144.073562549,
+        "organismo_principal": {
+          "codigo_organismo": "7324",
+          "nombre_organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
+          "monto_clp": 4670990721.529999,
+          "pct_ventas_proveedor": 7.18
+        }
+      },
+      {
+        "id_proveedor": "240165",
+        "rut_proveedor": "76.711.330-7",
+        "nombre_proveedor": "Novo Nordisk Farmaceutica Limitada",
+        "monto_total_clp": 63142408971.92,
+        "n_ordenes": 872,
+        "n_organismos_distintos": 112,
+        "ticket_promedio": 72411019.463211,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 59511451013.0,
+          "pct_ventas_proveedor": 94.25
+        }
+      },
+      {
+        "id_proveedor": "79625",
+        "rut_proveedor": "81.897.500-7",
+        "nombre_proveedor": "teleton",
+        "monto_total_clp": 59828716000.0,
+        "n_ordenes": 1,
+        "n_organismos_distintos": 1,
+        "ticket_promedio": 59828716000.0,
+        "organismo_principal": {
+          "codigo_organismo": "6954",
+          "nombre_organismo": "FONDO NACIONAL DE SALUD",
+          "monto_clp": 59828716000.0,
+          "pct_ventas_proveedor": 100.0
+        }
+      },
+      {
+        "id_proveedor": "242458",
+        "rut_proveedor": "96.895.110-6",
+        "nombre_proveedor": "DISTRIBUIDORA COMERCIAL PHARMASAN LIMITADA",
+        "monto_total_clp": 59051268368.049995,
+        "n_ordenes": 30,
+        "n_organismos_distintos": 17,
+        "ticket_promedio": 1968375612.2683332,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 58963175958.4,
+          "pct_ventas_proveedor": 99.85
+        }
+      },
+      {
+        "id_proveedor": "24349",
+        "rut_proveedor": "81.527.200-5",
+        "nombre_proveedor": "SANOFI PASTEUR S A",
+        "monto_total_clp": 58762761334.9,
+        "n_ordenes": 8,
+        "n_organismos_distintos": 4,
+        "ticket_promedio": 7345345166.8625,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 58723212208.5,
+          "pct_ventas_proveedor": 99.93
+        }
+      }
+    ],
+    "top25_ordenes": [
+      {
+        "id_proveedor": "25638",
+        "rut_proveedor": "89.862.200-2",
+        "nombre_proveedor": "LATAM AIRLINES GROUP S.A.",
+        "monto_total_clp": 17316889069.569996,
+        "n_ordenes": 49937,
+        "n_organismos_distintos": 543,
+        "ticket_promedio": 346774.71753549465,
+        "organismo_principal": {
+          "codigo_organismo": "113812",
+          "nombre_organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+          "monto_clp": 1477612011.0,
+          "pct_ventas_proveedor": 8.53
+        }
+      },
+      {
+        "id_proveedor": "71217",
+        "rut_proveedor": "88.417.000-1",
+        "nombre_proveedor": "SKY AIRLINE S A",
+        "monto_total_clp": 4890541564.62,
+        "n_ordenes": 16965,
+        "n_organismos_distintos": 460,
+        "ticket_promedio": 288272.417602122,
+        "organismo_principal": {
+          "codigo_organismo": "1783361",
+          "nombre_organismo": "SERVICIO NACIONAL DE MIGRACIONES",
+          "monto_clp": 444549450.61999995,
+          "pct_ventas_proveedor": 9.09
+        }
+      },
+      {
+        "id_proveedor": "47654",
+        "rut_proveedor": "77.237.150-0",
+        "nombre_proveedor": "COMERCIAL MEDTRONIC CHILE LTDA",
+        "monto_total_clp": 65090756295.87991,
+        "n_ordenes": 14571,
+        "n_organismos_distintos": 129,
+        "ticket_promedio": 4467144.073562549,
+        "organismo_principal": {
+          "codigo_organismo": "7324",
+          "nombre_organismo": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
+          "monto_clp": 4670990721.529999,
+          "pct_ventas_proveedor": 7.18
+        }
+      },
+      {
+        "id_proveedor": "26963",
+        "rut_proveedor": "93.745.000-1",
+        "nombre_proveedor": "JOHNSON Y JOHNSON DE CHILE S A",
+        "monto_total_clp": 118561023217.7395,
+        "n_ordenes": 12431,
+        "n_organismos_distintos": 127,
+        "ticket_promedio": 9537529.017596291,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 60051210872.66,
+          "pct_ventas_proveedor": 50.65
+        }
+      },
+      {
+        "id_proveedor": "24141",
+        "rut_proveedor": "80.447.400-5",
+        "nombre_proveedor": "MUNNICH PHARMA MEDICAL SPA",
+        "monto_total_clp": 31315949414.61006,
+        "n_ordenes": 11190,
+        "n_organismos_distintos": 436,
+        "ticket_promedio": 2798565.631332445,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 9270897301.19,
+          "pct_ventas_proveedor": 29.6
+        }
+      },
+      {
+        "id_proveedor": "26741",
+        "rut_proveedor": "99.520.000-7",
+        "nombre_proveedor": "COPEC S.A.",
+        "monto_total_clp": 116145572214.92992,
+        "n_ordenes": 11018,
+        "n_organismos_distintos": 830,
+        "ticket_promedio": 10541438.756119978,
+        "organismo_principal": {
+          "codigo_organismo": "7248",
+          "nombre_organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+          "monto_clp": 13792086595.700003,
+          "pct_ventas_proveedor": 11.87
+        }
+      },
+      {
+        "id_proveedor": "47740",
+        "rut_proveedor": "96.756.540-7",
+        "nombre_proveedor": "B BRAUN MEDICAL SPA",
+        "monto_total_clp": 41603838988.89006,
+        "n_ordenes": 10980,
+        "n_organismos_distintos": 201,
+        "ticket_promedio": 3789056.3742158525,
+        "organismo_principal": {
+          "codigo_organismo": "7375",
+          "nombre_organismo": "COMPLEJO ASISTENCIAL DR.VICTOR RIOS RUIZ",
+          "monto_clp": 1668247018.6899993,
+          "pct_ventas_proveedor": 4.01
+        }
+      },
+      {
+        "id_proveedor": "27247",
+        "rut_proveedor": "96.568.740-8",
+        "nombre_proveedor": "GASCO GLP S A",
+        "monto_total_clp": 38034646976.60001,
+        "n_ordenes": 8777,
+        "n_organismos_distintos": 699,
+        "ticket_promedio": 4333445.024108467,
+        "organismo_principal": {
+          "codigo_organismo": "86766",
+          "nombre_organismo": "I MUNICIPALIDAD DE LA FLORIDA",
+          "monto_clp": 3424868947.0899997,
+          "pct_ventas_proveedor": 9.0
+        }
+      },
+      {
+        "id_proveedor": "44105",
+        "rut_proveedor": "77.478.120-k",
+        "nombre_proveedor": "Fresenius Kabi Chile Ltda.",
+        "monto_total_clp": 42515021781.929924,
+        "n_ordenes": 8326,
+        "n_organismos_distintos": 129,
+        "ticket_promedio": 5106296.154447504,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 6124415122.7,
+          "pct_ventas_proveedor": 14.41
+        }
+      },
+      {
+        "id_proveedor": "27097",
+        "rut_proveedor": "96.515.660-7",
+        "nombre_proveedor": "CENTRAL DE COMPRAS DEL EXTRASISTEMA S.A.",
+        "monto_total_clp": 21311232683.18003,
+        "n_ordenes": 6716,
+        "n_organismos_distintos": 155,
+        "ticket_promedio": 3173203.1988058416,
+        "organismo_principal": {
+          "codigo_organismo": "7428",
+          "nombre_organismo": "SERVICIO DE SALUD ORIENTE HOSPITAL DEL SALVADOR",
+          "monto_clp": 1377084248.2599998,
+          "pct_ventas_proveedor": 6.46
+        }
+      },
+      {
+        "id_proveedor": "39998",
+        "rut_proveedor": "92.288.000-k",
+        "nombre_proveedor": "DROGUERIA HOFMANN SAC",
+        "monto_total_clp": 18128819024.170013,
+        "n_ordenes": 6663,
+        "n_organismos_distintos": 294,
+        "ticket_promedio": 2720819.3042428354,
+        "organismo_principal": {
+          "codigo_organismo": "6932",
+          "nombre_organismo": "SERVICIO DE SALUD NUBLE",
+          "monto_clp": 2401206180.8,
+          "pct_ventas_proveedor": 13.25
+        }
+      },
+      {
+        "id_proveedor": "1598604",
+        "rut_proveedor": "76.150.343-k",
+        "nombre_proveedor": "INDURA S.A.",
+        "monto_total_clp": 9536785394.760017,
+        "n_ordenes": 6647,
+        "n_organismos_distintos": 250,
+        "ticket_promedio": 1434750.322665867,
+        "organismo_principal": {
+          "codigo_organismo": "7383",
+          "nombre_organismo": "SERVICIO SALUD OCCIDENTE HOSPITAL DR FELIX BULNES CERDA",
+          "monto_clp": 344558857.02000004,
+          "pct_ventas_proveedor": 3.61
+        }
+      },
+      {
+        "id_proveedor": "1773777",
+        "rut_proveedor": "77.337.544-5",
+        "nombre_proveedor": "SCM PHARMA SPA",
+        "monto_total_clp": 8086170633.459976,
+        "n_ordenes": 6464,
+        "n_organismos_distintos": 597,
+        "ticket_promedio": 1250954.6153248725,
+        "organismo_principal": {
+          "codigo_organismo": "7312",
+          "nombre_organismo": "SERVICIO DE SALUD COQUIMBO HOSPITAL LA SERENA",
+          "monto_clp": 186980433.84999993,
+          "pct_ventas_proveedor": 2.31
+        }
+      },
+      {
+        "id_proveedor": "26931",
+        "rut_proveedor": "93.366.000-1",
+        "nombre_proveedor": "COMERCIAL LBF LIMITADA",
+        "monto_total_clp": 16213887926.820047,
+        "n_ordenes": 6261,
+        "n_organismos_distintos": 228,
+        "ticket_promedio": 2589664.259195024,
+        "organismo_principal": {
+          "codigo_organismo": "7419",
+          "nombre_organismo": "SERVICIO DE SALUD DE TALCAHUANO HOSPITAL",
+          "monto_clp": 947619571.9200004,
+          "pct_ventas_proveedor": 5.84
+        }
+      },
+      {
+        "id_proveedor": "26796",
+        "rut_proveedor": "91.806.000-6",
+        "nombre_proveedor": "ABASTIBLE S.A.",
+        "monto_total_clp": 12852916055.37998,
+        "n_ordenes": 6116,
+        "n_organismos_distintos": 401,
+        "ticket_promedio": 2101523.2268443396,
+        "organismo_principal": {
+          "codigo_organismo": "100728",
+          "nombre_organismo": "I MUNICIPALIDAD DE PAINE",
+          "monto_clp": 1250995434.92,
+          "pct_ventas_proveedor": 9.73
+        }
+      },
+      {
+        "id_proveedor": "27380",
+        "rut_proveedor": "96.625.950-7",
+        "nombre_proveedor": "TECNIKA S A",
+        "monto_total_clp": 21993639920.439976,
+        "n_ordenes": 6100,
+        "n_organismos_distintos": 320,
+        "ticket_promedio": 3605514.7410557335,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 11008801860.0,
+          "pct_ventas_proveedor": 50.05
+        }
+      },
+      {
+        "id_proveedor": "21582",
+        "rut_proveedor": "78.874.470-6",
+        "nombre_proveedor": "STRYKER CORPORATION CHILE Y COMPANIA LIMITADA",
+        "monto_total_clp": 27834896346.06001,
+        "n_ordenes": 5765,
+        "n_organismos_distintos": 111,
+        "ticket_promedio": 4828256.087781441,
+        "organismo_principal": {
+          "codigo_organismo": "6932",
+          "nombre_organismo": "SERVICIO DE SALUD NUBLE",
+          "monto_clp": 2338683312.95,
+          "pct_ventas_proveedor": 8.4
+        }
+      },
+      {
+        "id_proveedor": "1798212",
+        "rut_proveedor": "77.316.253-0",
+        "nombre_proveedor": "COMERCIAL GBG SPA",
+        "monto_total_clp": 6104176065.379997,
+        "n_ordenes": 5298,
+        "n_organismos_distintos": 425,
+        "ticket_promedio": 1152166.1127557564,
+        "organismo_principal": {
+          "codigo_organismo": "7406",
+          "nombre_organismo": "SERVICIO DE SALUD METROPOLITANA NORTE HOSPITAL SAN JOSE",
+          "monto_clp": 350709793.28000003,
+          "pct_ventas_proveedor": 5.75
+        }
+      },
+      {
+        "id_proveedor": "27693",
+        "rut_proveedor": "96.781.350-8",
+        "nombre_proveedor": "EDENRED CHILE SOCIEDAD ANONIMA",
+        "monto_total_clp": 507604761434.01636,
+        "n_ordenes": 5284,
+        "n_organismos_distintos": 463,
+        "ticket_promedio": 96064489.29485548,
+        "organismo_principal": {
+          "codigo_organismo": "7002",
+          "nombre_organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
+          "monto_clp": 403570899169.34,
+          "pct_ventas_proveedor": 79.5
+        }
+      },
+      {
+        "id_proveedor": "58732",
+        "rut_proveedor": "86.383.300-0",
+        "nombre_proveedor": "MEDIPLEX S A",
+        "monto_total_clp": 14594881218.46001,
+        "n_ordenes": 5199,
+        "n_organismos_distintos": 250,
+        "ticket_promedio": 2807247.7819696115,
+        "organismo_principal": {
+          "codigo_organismo": "7320",
+          "nombre_organismo": "COMPLEJO ASISTENCIAL DR. SOTERO DEL RIO",
+          "monto_clp": 676901544.13,
+          "pct_ventas_proveedor": 4.64
+        }
+      },
+      {
+        "id_proveedor": "24526",
+        "rut_proveedor": "82.999.400-3",
+        "nombre_proveedor": "ROCHE CHILE LIMITADA",
+        "monto_total_clp": 131800920459.65994,
+        "n_ordenes": 5091,
+        "n_organismos_distintos": 163,
+        "ticket_promedio": 25889004.215215076,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 65629258589.3,
+          "pct_ventas_proveedor": 49.79
+        }
+      },
+      {
+        "id_proveedor": "1311638",
+        "rut_proveedor": "76.125.564-9",
+        "nombre_proveedor": "Laboratorio Aconfar Chile ltda.",
+        "monto_total_clp": 8232998202.479999,
+        "n_ordenes": 4884,
+        "n_organismos_distintos": 439,
+        "ticket_promedio": 1685708.0676658475,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 2604272388.48,
+          "pct_ventas_proveedor": 31.63
+        }
+      },
+      {
+        "id_proveedor": "22062",
+        "rut_proveedor": "79.568.850-1",
+        "nombre_proveedor": "VALTEK  S.A.",
+        "monto_total_clp": 28040667411.679985,
+        "n_ordenes": 4775,
+        "n_organismos_distintos": 233,
+        "ticket_promedio": 5872391.080980102,
+        "organismo_principal": {
+          "codigo_organismo": "7417",
+          "nombre_organismo": "SERVICIO DE SALUD COQUIMBO HOSPITAL DE O",
+          "monto_clp": 1544304490.5399997,
+          "pct_ventas_proveedor": 5.51
+        }
+      },
+      {
+        "id_proveedor": "49120",
+        "rut_proveedor": "96.556.940-5",
+        "nombre_proveedor": "PROVEEDORES INTEGRALES PRISA S A",
+        "monto_total_clp": 19738932748.879967,
+        "n_ordenes": 4757,
+        "n_organismos_distintos": 649,
+        "ticket_promedio": 4149449.81056968,
+        "organismo_principal": {
+          "codigo_organismo": "1172700",
+          "nombre_organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
+          "monto_clp": 1450998188.6500006,
+          "pct_ventas_proveedor": 7.35
+        }
+      },
+      {
+        "id_proveedor": "31590",
+        "rut_proveedor": "81.210.400-4",
+        "nombre_proveedor": "REUTTER S A",
+        "monto_total_clp": 20572447578.01002,
+        "n_ordenes": 4717,
+        "n_organismos_distintos": 353,
+        "ticket_promedio": 4361341.4411723595,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 11073800183.6,
+          "pct_ventas_proveedor": 53.83
+        }
+      }
+    ],
+    "top25_organismos_distintos": [
+      {
+        "id_proveedor": "26741",
+        "rut_proveedor": "99.520.000-7",
+        "nombre_proveedor": "COPEC S.A.",
+        "monto_total_clp": 116145572214.92992,
+        "n_ordenes": 11018,
+        "n_organismos_distintos": 830,
+        "ticket_promedio": 10541438.756119978,
+        "organismo_principal": {
+          "codigo_organismo": "7248",
+          "nombre_organismo": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+          "monto_clp": 13792086595.700003,
+          "pct_ventas_proveedor": 11.87
+        }
+      },
+      {
+        "id_proveedor": "27247",
+        "rut_proveedor": "96.568.740-8",
+        "nombre_proveedor": "GASCO GLP S A",
+        "monto_total_clp": 38034646976.60001,
+        "n_ordenes": 8777,
+        "n_organismos_distintos": 699,
+        "ticket_promedio": 4333445.024108467,
+        "organismo_principal": {
+          "codigo_organismo": "86766",
+          "nombre_organismo": "I MUNICIPALIDAD DE LA FLORIDA",
+          "monto_clp": 3424868947.0899997,
+          "pct_ventas_proveedor": 9.0
+        }
+      },
+      {
+        "id_proveedor": "49120",
+        "rut_proveedor": "96.556.940-5",
+        "nombre_proveedor": "PROVEEDORES INTEGRALES PRISA S A",
+        "monto_total_clp": 19738932748.879967,
+        "n_ordenes": 4757,
+        "n_organismos_distintos": 649,
+        "ticket_promedio": 4149449.81056968,
+        "organismo_principal": {
+          "codigo_organismo": "1172700",
+          "nombre_organismo": "FUNDACION EDUCACIONAL PARA EL DESAROLLO INTEGRAL DE LA NIÑEZ",
+          "monto_clp": 1450998188.6500006,
+          "pct_ventas_proveedor": 7.35
+        }
+      },
+      {
+        "id_proveedor": "1823111",
+        "rut_proveedor": "77.536.654-0",
+        "nombre_proveedor": "SOCOEX CHILE SPA",
+        "monto_total_clp": 1143471313.3600025,
+        "n_ordenes": 2005,
+        "n_organismos_distintos": 601,
+        "ticket_promedio": 570309.8819750636,
+        "organismo_principal": {
+          "codigo_organismo": "111870",
+          "nombre_organismo": "DIVISION LOGISTICA DEL EJERCITO",
+          "monto_clp": 111268092.89000002,
+          "pct_ventas_proveedor": 9.73
+        }
+      },
+      {
+        "id_proveedor": "1773777",
+        "rut_proveedor": "77.337.544-5",
+        "nombre_proveedor": "SCM PHARMA SPA",
+        "monto_total_clp": 8086170633.459976,
+        "n_ordenes": 6464,
+        "n_organismos_distintos": 597,
+        "ticket_promedio": 1250954.6153248725,
+        "organismo_principal": {
+          "codigo_organismo": "7312",
+          "nombre_organismo": "SERVICIO DE SALUD COQUIMBO HOSPITAL LA SERENA",
+          "monto_clp": 186980433.84999993,
+          "pct_ventas_proveedor": 2.31
+        }
+      },
+      {
+        "id_proveedor": "1635531",
+        "rut_proveedor": "76.539.061-3",
+        "nombre_proveedor": "DELTA GENERACION SPA",
+        "monto_total_clp": 2938904679.7299924,
+        "n_ordenes": 3482,
+        "n_organismos_distintos": 558,
+        "ticket_promedio": 844027.7655743804,
+        "organismo_principal": {
+          "codigo_organismo": "1622818",
+          "nombre_organismo": "SERVICIO LOCAL DE EDUCACION COSTA ARAUCANIA",
+          "monto_clp": 181980040.76000002,
+          "pct_ventas_proveedor": 6.19
+        }
+      },
+      {
+        "id_proveedor": "27467",
+        "rut_proveedor": "96.670.840-9",
+        "nombre_proveedor": "DIMERC S A",
+        "monto_total_clp": 17179976046.929996,
+        "n_ordenes": 3761,
+        "n_organismos_distintos": 544,
+        "ticket_promedio": 4567927.691286891,
+        "organismo_principal": {
+          "codigo_organismo": "113812",
+          "nombre_organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+          "monto_clp": 782063616.1900002,
+          "pct_ventas_proveedor": 4.55
+        }
+      },
+      {
+        "id_proveedor": "25638",
+        "rut_proveedor": "89.862.200-2",
+        "nombre_proveedor": "LATAM AIRLINES GROUP S.A.",
+        "monto_total_clp": 17316889069.569996,
+        "n_ordenes": 49937,
+        "n_organismos_distintos": 543,
+        "ticket_promedio": 346774.71753549465,
+        "organismo_principal": {
+          "codigo_organismo": "113812",
+          "nombre_organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+          "monto_clp": 1477612011.0,
+          "pct_ventas_proveedor": 8.53
+        }
+      },
+      {
+        "id_proveedor": "1766003",
+        "rut_proveedor": "77.324.357-3",
+        "nombre_proveedor": "LEFI SPA",
+        "monto_total_clp": 2717728653.9599996,
+        "n_ordenes": 1744,
+        "n_organismos_distintos": 539,
+        "ticket_promedio": 1558330.6502064217,
+        "organismo_principal": {
+          "codigo_organismo": "1887034",
+          "nombre_organismo": "SERVICIO NACIONAL DE REINSERCION SOCIAL JUVENIL",
+          "monto_clp": 123528011.83,
+          "pct_ventas_proveedor": 4.55
+        }
+      },
+      {
+        "id_proveedor": "1417412",
+        "rut_proveedor": "76.074.614-2",
+        "nombre_proveedor": "PCINBOX SPA",
+        "monto_total_clp": 2211740612.829979,
+        "n_ordenes": 2017,
+        "n_organismos_distintos": 519,
+        "ticket_promedio": 1096549.6345215563,
+        "organismo_principal": {
+          "codigo_organismo": "7207",
+          "nombre_organismo": "GOBIERNO REGIONAL DECIMA REGION LOS LAGOS",
+          "monto_clp": 52451522.900000006,
+          "pct_ventas_proveedor": 2.37
+        }
+      },
+      {
+        "id_proveedor": "139257",
+        "rut_proveedor": "5.398.787-7",
+        "nombre_proveedor": "EDUARDO AWAD MANZUR",
+        "monto_total_clp": 1981489814.8099988,
+        "n_ordenes": 2296,
+        "n_organismos_distintos": 512,
+        "ticket_promedio": 863018.2120252608,
+        "organismo_principal": {
+          "codigo_organismo": "7331",
+          "nombre_organismo": "HOSPITAL PADRE ALBERTO HURTADO",
+          "monto_clp": 58365239.8,
+          "pct_ventas_proveedor": 2.95
+        }
+      },
+      {
+        "id_proveedor": "1966261",
+        "rut_proveedor": "77.044.559-0",
+        "nombre_proveedor": "SUPER SPORT & MEDICAL SPA",
+        "monto_total_clp": 1635582056.7700002,
+        "n_ordenes": 1552,
+        "n_organismos_distintos": 504,
+        "ticket_promedio": 1053854.4180219073,
+        "organismo_principal": {
+          "codigo_organismo": "111870",
+          "nombre_organismo": "DIVISION LOGISTICA DEL EJERCITO",
+          "monto_clp": 160186437.53,
+          "pct_ventas_proveedor": 9.79
+        }
+      },
+      {
+        "id_proveedor": "1308209",
+        "rut_proveedor": "76.209.015-5",
+        "nombre_proveedor": "SOCIEDAD INMOBILIARIA Y PRESTADORA DE SERVICIOS MEDICOS VIVIRSALUD LIM",
+        "monto_total_clp": 2769739387.3600025,
+        "n_ordenes": 1914,
+        "n_organismos_distintos": 493,
+        "ticket_promedio": 1447094.7687356335,
+        "organismo_principal": {
+          "codigo_organismo": "93619",
+          "nombre_organismo": "I MUNICIPALIDAD DE MAIPU",
+          "monto_clp": 429927503.99,
+          "pct_ventas_proveedor": 15.52
+        }
+      },
+      {
+        "id_proveedor": "1681045",
+        "rut_proveedor": "77.025.316-0",
+        "nombre_proveedor": "INGENIERIA, SOPORTE Y CADENA DE SUMINISTRO SPA",
+        "monto_total_clp": 2243758979.4300003,
+        "n_ordenes": 1725,
+        "n_organismos_distintos": 491,
+        "ticket_promedio": 1300729.8431478261,
+        "organismo_principal": {
+          "codigo_organismo": "1396697",
+          "nombre_organismo": "CORP MUNICIPAL DE VALPARAISO PARA EL DESARROLLO SOCIAL",
+          "monto_clp": 57483575.940000005,
+          "pct_ventas_proveedor": 2.56
+        }
+      },
+      {
+        "id_proveedor": "16669",
+        "rut_proveedor": "7.191.242-6",
+        "nombre_proveedor": "ÁLVARO JOSÉ DEL CAMPO SÁEZ",
+        "monto_total_clp": 3021431155.550002,
+        "n_ordenes": 1803,
+        "n_organismos_distintos": 468,
+        "ticket_promedio": 1675779.8976982818,
+        "organismo_principal": {
+          "codigo_organismo": "87187",
+          "nombre_organismo": "I MUNICIPALIDAD DE LOS ANGELES",
+          "monto_clp": 114855372.8,
+          "pct_ventas_proveedor": 3.8
+        }
+      },
+      {
+        "id_proveedor": "1418887",
+        "rut_proveedor": "76.292.976-7",
+        "nombre_proveedor": "COMERCIALIZADORA TODOTABLET SPA",
+        "monto_total_clp": 4436776197.639997,
+        "n_ordenes": 1429,
+        "n_organismos_distintos": 466,
+        "ticket_promedio": 3104811.894779564,
+        "organismo_principal": {
+          "codigo_organismo": "126109",
+          "nombre_organismo": "UNIVERSIDAD TECNOLOGICA METROPOLITANA",
+          "monto_clp": 165921856.69,
+          "pct_ventas_proveedor": 3.74
+        }
+      },
+      {
+        "id_proveedor": "1421074",
+        "rut_proveedor": "76.378.394-4",
+        "nombre_proveedor": "REDOFFICE DISTRIBUCION SPA",
+        "monto_total_clp": 1044538892.6499994,
+        "n_ordenes": 1621,
+        "n_organismos_distintos": 464,
+        "ticket_promedio": 644379.3292103636,
+        "organismo_principal": {
+          "codigo_organismo": "6925",
+          "nombre_organismo": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
+          "monto_clp": 42009518.04,
+          "pct_ventas_proveedor": 4.02
+        }
+      },
+      {
+        "id_proveedor": "27693",
+        "rut_proveedor": "96.781.350-8",
+        "nombre_proveedor": "EDENRED CHILE SOCIEDAD ANONIMA",
+        "monto_total_clp": 507604761434.01636,
+        "n_ordenes": 5284,
+        "n_organismos_distintos": 463,
+        "ticket_promedio": 96064489.29485548,
+        "organismo_principal": {
+          "codigo_organismo": "7002",
+          "nombre_organismo": "JUNTA NACIONAL DE AUXILIO ESCOLAR Y BECA",
+          "monto_clp": 403570899169.34,
+          "pct_ventas_proveedor": 79.5
+        }
+      },
+      {
+        "id_proveedor": "71217",
+        "rut_proveedor": "88.417.000-1",
+        "nombre_proveedor": "SKY AIRLINE S A",
+        "monto_total_clp": 4890541564.62,
+        "n_ordenes": 16965,
+        "n_organismos_distintos": 460,
+        "ticket_promedio": 288272.417602122,
+        "organismo_principal": {
+          "codigo_organismo": "1783361",
+          "nombre_organismo": "SERVICIO NACIONAL DE MIGRACIONES",
+          "monto_clp": 444549450.61999995,
+          "pct_ventas_proveedor": 9.09
+        }
+      },
+      {
+        "id_proveedor": "1544964",
+        "rut_proveedor": "76.576.352-5",
+        "nombre_proveedor": "COSMETICAVAL",
+        "monto_total_clp": 1099243417.8699987,
+        "n_ordenes": 1112,
+        "n_organismos_distintos": 459,
+        "ticket_promedio": 988528.2534802146,
+        "organismo_principal": {
+          "codigo_organismo": "113812",
+          "nombre_organismo": "DIRECCION DE LOGISTICA DE CARABINEROS",
+          "monto_clp": 50689607.70999999,
+          "pct_ventas_proveedor": 4.61
+        }
+      },
+      {
+        "id_proveedor": "1987170",
+        "rut_proveedor": "77.945.971-3",
+        "nombre_proveedor": "GRUPO MEDENT SPA",
+        "monto_total_clp": 2591886016.699996,
+        "n_ordenes": 1984,
+        "n_organismos_distintos": 442,
+        "ticket_promedio": 1306394.161643143,
+        "organismo_principal": {
+          "codigo_organismo": "1396697",
+          "nombre_organismo": "CORP MUNICIPAL DE VALPARAISO PARA EL DESARROLLO SOCIAL",
+          "monto_clp": 69964533.94,
+          "pct_ventas_proveedor": 2.7
+        }
+      },
+      {
+        "id_proveedor": "1372605",
+        "rut_proveedor": "76.247.853-6",
+        "nombre_proveedor": "ICE WORLD SPA",
+        "monto_total_clp": 542713859.9000001,
+        "n_ordenes": 997,
+        "n_organismos_distintos": 441,
+        "ticket_promedio": 544346.9006018055,
+        "organismo_principal": {
+          "codigo_organismo": "7251",
+          "nombre_organismo": "UNIVERSIDAD DE CHILE",
+          "monto_clp": 14940052.54,
+          "pct_ventas_proveedor": 2.75
+        }
+      },
+      {
+        "id_proveedor": "1311638",
+        "rut_proveedor": "76.125.564-9",
+        "nombre_proveedor": "Laboratorio Aconfar Chile ltda.",
+        "monto_total_clp": 8232998202.479999,
+        "n_ordenes": 4884,
+        "n_organismos_distintos": 439,
+        "ticket_promedio": 1685708.0676658475,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 2604272388.48,
+          "pct_ventas_proveedor": 31.63
+        }
+      },
+      {
+        "id_proveedor": "24141",
+        "rut_proveedor": "80.447.400-5",
+        "nombre_proveedor": "MUNNICH PHARMA MEDICAL SPA",
+        "monto_total_clp": 31315949414.61006,
+        "n_ordenes": 11190,
+        "n_organismos_distintos": 436,
+        "ticket_promedio": 2798565.631332445,
+        "organismo_principal": {
+          "codigo_organismo": "6957",
+          "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+          "monto_clp": 9270897301.19,
+          "pct_ventas_proveedor": 29.6
+        }
+      },
+      {
+        "id_proveedor": "1781102",
+        "rut_proveedor": "77.316.878-4",
+        "nombre_proveedor": "INVERSIONES JIMENEZ SPA",
+        "monto_total_clp": 1764980021.9400012,
+        "n_ordenes": 1143,
+        "n_organismos_distintos": 435,
+        "ticket_promedio": 1544164.4986351717,
+        "organismo_principal": {
+          "codigo_organismo": "87901",
+          "nombre_organismo": "I MUNICIPALIDAD DE COQUIMBO",
+          "monto_clp": 63986111.87,
+          "pct_ventas_proveedor": 3.63
+        }
+      }
+    ],
+    "distribucion_sectores": [
+      {
+        "sector": "Salud",
+        "monto_total_clp": 6565388748618.746,
+        "pct_gasto_total": 36.11,
+        "n_ordenes": 699640,
+        "n_organismos": 224
+      },
+      {
+        "sector": "Gob. Central, Universidades",
+        "monto_total_clp": 5609264686937.505,
+        "pct_gasto_total": 30.85,
+        "n_ordenes": 290437,
+        "n_organismos": 232
+      },
+      {
+        "sector": "Municipalidades",
+        "monto_total_clp": 4001180128702.4624,
+        "pct_gasto_total": 22.0,
+        "n_ordenes": 585010,
+        "n_organismos": 367
+      },
+      {
+        "sector": "Obras Públicas",
+        "monto_total_clp": 745904746254.1351,
+        "pct_gasto_total": 4.1,
+        "n_ordenes": 27572,
+        "n_organismos": 30
+      },
+      {
+        "sector": "FFAA",
+        "monto_total_clp": 664063919307.3262,
+        "pct_gasto_total": 3.65,
+        "n_ordenes": 146851,
+        "n_organismos": 8
+      },
+      {
+        "sector": "Otros",
+        "monto_total_clp": 260026082189.50128,
+        "pct_gasto_total": 1.43,
+        "n_ordenes": 43490,
+        "n_organismos": 94
+      },
+      {
+        "sector": "NA",
+        "monto_total_clp": 259764857199.29346,
+        "pct_gasto_total": 1.43,
+        "n_ordenes": 44962,
+        "n_organismos": 197
+      },
+      {
+        "sector": "Legislativo y judicial",
+        "monto_total_clp": 78123624260.59973,
+        "pct_gasto_total": 0.43,
+        "n_ordenes": 15473,
+        "n_organismos": 13
+      }
+    ],
+    "evolucion_mensual": [
+      {
+        "mes": 1,
+        "monto_total_clp": 2536537076138.047,
+        "n_ordenes": 139260,
+        "ticket_promedio": 18214398.07653344
+      },
+      {
+        "mes": 2,
+        "monto_total_clp": 2515299309725.979,
+        "n_ordenes": 126004,
+        "ticket_promedio": 19962059.21816751
+      },
+      {
+        "mes": 3,
+        "monto_total_clp": 1917705720943.0955,
+        "n_ordenes": 148791,
+        "ticket_promedio": 12888586.81602446
+      },
+      {
+        "mes": 4,
+        "monto_total_clp": 1490178639425.7302,
+        "n_ordenes": 161575,
+        "ticket_promedio": 9222829.270776607
+      },
+      {
+        "mes": 5,
+        "monto_total_clp": 1218206362247.7905,
+        "n_ordenes": 156579,
+        "ticket_promedio": 7780138.858006441
+      },
+      {
+        "mes": 6,
+        "monto_total_clp": 1332199344213.3833,
+        "n_ordenes": 155091,
+        "ticket_promedio": 8589791.43995063
+      },
+      {
+        "mes": 7,
+        "monto_total_clp": 1229524124277.0356,
+        "n_ordenes": 163895,
+        "ticket_promedio": 7501901.365368289
+      },
+      {
+        "mes": 8,
+        "monto_total_clp": 1220031362979.974,
+        "n_ordenes": 159326,
+        "ticket_promedio": 7657453.039553959
+      },
+      {
+        "mes": 9,
+        "monto_total_clp": 1138372648262.9175,
+        "n_ordenes": 149830,
+        "ticket_promedio": 7597761.785109241
+      },
+      {
+        "mes": 10,
+        "monto_total_clp": 1204662011123.9905,
+        "n_ordenes": 170240,
+        "ticket_promedio": 7076257.11421517
+      },
+      {
+        "mes": 11,
+        "monto_total_clp": 981098394925.6426,
+        "n_ordenes": 167915,
+        "ticket_promedio": 5842827.5908980295
+      },
+      {
+        "mes": 12,
+        "monto_total_clp": 1399901799205.2837,
+        "n_ordenes": 154929,
+        "ticket_promedio": 9035763.473625233
+      }
+    ]
+  },
+  "emulacion_giraph_pagerank": {
+    "variante_a_baseline_g13": {
+      "descripcion": "Dirigido Puro Organismo -> Proveedor sin pesos (Baseline propuesto por G13).",
+      "tiempo_segundos": 0.1148,
+      "num_valores_distintos_organismos": 1,
+      "valor_constante_organismos": 1.953939141308879e-06,
+      "top10_proveedores": [
+        {
+          "nombre": "SKY AIRLINE S A",
+          "rut": "88.417.000-1",
+          "pagerank": 8.269222959718554e-06,
+          "orgs_distintos": 460,
+          "rank_monto": 528
+        },
+        {
+          "nombre": "COPEC S.A.",
+          "rut": "99.520.000-7",
+          "pagerank": 7.933533033529235e-06,
+          "orgs_distintos": 830,
+          "rank_monto": 15
+        },
+        {
+          "nombre": "LATAM AIRLINES GROUP S.A.",
+          "rut": "89.862.200-2",
+          "pagerank": 7.826455021560902e-06,
+          "orgs_distintos": 543,
+          "rank_monto": 135
+        },
+        {
+          "nombre": "PROVEEDORES INTEGRALES PRISA S A",
+          "rut": "96.556.940-5",
+          "pagerank": 6.903642239053012e-06,
+          "orgs_distintos": 649,
+          "rank_monto": 119
+        },
+        {
+          "nombre": "GASCO GLP S A",
+          "rut": "96.568.740-8",
+          "pagerank": 6.624916698055041e-06,
+          "orgs_distintos": 699,
+          "rank_monto": 45
+        },
+        {
+          "nombre": "DELTA GENERACION SPA",
+          "rut": "76.539.061-3",
+          "pagerank": 6.20779430903742e-06,
+          "orgs_distintos": 558,
+          "rank_monto": 835
+        },
+        {
+          "nombre": "ABASTIBLE S.A.",
+          "rut": "91.806.000-6",
+          "pagerank": 5.359803733438474e-06,
+          "orgs_distintos": 401,
+          "rank_monto": 193
+        },
+        {
+          "nombre": "SOCOEX CHILE SPA",
+          "rut": "77.536.654-0",
+          "pagerank": 5.252786025950179e-06,
+          "orgs_distintos": 601,
+          "rank_monto": 1893
+        },
+        {
+          "nombre": "EDENRED CHILE SOCIEDAD ANONIMA",
+          "rut": "96.781.350-8",
+          "pagerank": 5.1518055661512915e-06,
+          "orgs_distintos": 463,
+          "rank_monto": 1
+        },
+        {
+          "nombre": "DIMERC S A",
+          "rut": "96.670.840-9",
+          "pagerank": 4.937815094376272e-06,
+          "orgs_distintos": 544,
+          "rank_monto": 136
+        }
+      ]
+    },
+    "variante_b_bipartito_sin_pesos": {
+      "descripcion": "Bipartito Bidireccional Organismo <-> Proveedor sin pesos.",
+      "tiempo_segundos": 0.2934,
+      "top10_proveedores": [
+        {
+          "nombre": "COPEC S.A.",
+          "rut": "99.520.000-7",
+          "pagerank": 0.0006806356214879227,
+          "orgs_distintos": 830,
+          "rank_monto": 15
+        },
+        {
+          "nombre": "GASCO GLP S A",
+          "rut": "96.568.740-8",
+          "pagerank": 0.0005763148461691489,
+          "orgs_distintos": 699,
+          "rank_monto": 45
+        },
+        {
+          "nombre": "PROVEEDORES INTEGRALES PRISA S A",
+          "rut": "96.556.940-5",
+          "pagerank": 0.0005256633097673337,
+          "orgs_distintos": 649,
+          "rank_monto": 119
+        },
+        {
+          "nombre": "SOCOEX CHILE SPA",
+          "rut": "77.536.654-0",
+          "pagerank": 0.00048550402065141004,
+          "orgs_distintos": 601,
+          "rank_monto": 1893
+        },
+        {
+          "nombre": "SCM PHARMA SPA",
+          "rut": "77.337.544-5",
+          "pagerank": 0.0004717989869597684,
+          "orgs_distintos": 597,
+          "rank_monto": 319
+        },
+        {
+          "nombre": "LATAM AIRLINES GROUP S.A.",
+          "rut": "89.862.200-2",
+          "pagerank": 0.00046744630809085166,
+          "orgs_distintos": 543,
+          "rank_monto": 135
+        },
+        {
+          "nombre": "DELTA GENERACION SPA",
+          "rut": "76.539.061-3",
+          "pagerank": 0.00044904384624262935,
+          "orgs_distintos": 558,
+          "rank_monto": 835
+        },
+        {
+          "nombre": "LEFI SPA",
+          "rut": "77.324.357-3",
+          "pagerank": 0.0004412166038370858,
+          "orgs_distintos": 539,
+          "rank_monto": 898
+        },
+        {
+          "nombre": "DIMERC S A",
+          "rut": "96.670.840-9",
+          "pagerank": 0.00044054142977252635,
+          "orgs_distintos": 544,
+          "rank_monto": 136
+        },
+        {
+          "nombre": "PCINBOX SPA",
+          "rut": "76.074.614-2",
+          "pagerank": 0.00043233484313776743,
+          "orgs_distintos": 519,
+          "rank_monto": 1079
+        }
+      ]
+    },
+    "variante_c_ponderado_frecuencia": {
+      "descripcion": "Bipartito Bidireccional ponderado por n_ordenes (w = n_ordenes).",
+      "tiempo_segundos": 0.2905
+    },
+    "variante_d_ponderado_log_financiero": {
+      "descripcion": "Bipartito Bidireccional ponderado por logaritmo del monto (w = ln(1 + Monto)).",
+      "tiempo_segundos": 0.3513,
+      "top10_proveedores": [
+        {
+          "nombre": "COPEC S.A.",
+          "rut": "99.520.000-7",
+          "pagerank": 0.0008236295046768408,
+          "orgs_distintos": 830,
+          "rank_monto": 15
+        },
+        {
+          "nombre": "GASCO GLP S A",
+          "rut": "96.568.740-8",
+          "pagerank": 0.000622992847474358,
+          "orgs_distintos": 699,
+          "rank_monto": 45
+        },
+        {
+          "nombre": "PROVEEDORES INTEGRALES PRISA S A",
+          "rut": "96.556.940-5",
+          "pagerank": 0.0005668130002083595,
+          "orgs_distintos": 649,
+          "rank_monto": 119
+        },
+        {
+          "nombre": "SCM PHARMA SPA",
+          "rut": "77.337.544-5",
+          "pagerank": 0.0004956361400167705,
+          "orgs_distintos": 597,
+          "rank_monto": 319
+        },
+        {
+          "nombre": "LATAM AIRLINES GROUP S.A.",
+          "rut": "89.862.200-2",
+          "pagerank": 0.0004943133102384977,
+          "orgs_distintos": 543,
+          "rank_monto": 135
+        },
+        {
+          "nombre": "DIMERC S A",
+          "rut": "96.670.840-9",
+          "pagerank": 0.0004884010933858038,
+          "orgs_distintos": 544,
+          "rank_monto": 136
+        },
+        {
+          "nombre": "SOCOEX CHILE SPA",
+          "rut": "77.536.654-0",
+          "pagerank": 0.00044935736647181747,
+          "orgs_distintos": 601,
+          "rank_monto": 1893
+        },
+        {
+          "nombre": "EDENRED CHILE SOCIEDAD ANONIMA",
+          "rut": "96.781.350-8",
+          "pagerank": 0.00044558979917872177,
+          "orgs_distintos": 463,
+          "rank_monto": 1
+        },
+        {
+          "nombre": "DELTA GENERACION SPA",
+          "rut": "76.539.061-3",
+          "pagerank": 0.0004432893326376188,
+          "orgs_distintos": 558,
+          "rank_monto": 835
+        },
+        {
+          "nombre": "LEFI SPA",
+          "rut": "77.324.357-3",
+          "pagerank": 0.000436002885774997,
+          "orgs_distintos": 539,
+          "rank_monto": 898
+        }
+      ]
+    }
+  },
+  "perfiles_del_profesor": {
+    "perfil_1_alto_monto_bajo_pagerank": {
+      "definicion": "Proveedores en el Top de facturación estatal (Top 250), pero con bajo PageRank y abasteciendo a solo 1-3 organismos.",
+      "total_candidatos": 66,
+      "top15": [
+        {
+          "id_proveedor": "1955629",
+          "rut_proveedor": "96.681.550-7",
+          "nombre_proveedor": "CONSTRUCTORA VICONSA S A",
+          "monto_total_clp": 11786715832.99,
+          "n_ordenes": 2,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 5893357916.495,
+          "organismo_principal": {
+            "codigo_organismo": "7153",
+            "nombre_organismo": "SERVICIO SALUD VINA DEL MAR QUILLOTA",
+            "monto_clp": 11786715832.99,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 215,
+          "percentil_monto": 99.72,
+          "pagerank_variante_a": 1.9564180193239726e-06,
+          "rank_pr_a": 51361,
+          "pagerank_variante_b": 2.6429367063645305e-06,
+          "rank_pr_b": 73854,
+          "percentil_pr_b": 2.31,
+          "pagerank_variante_c": 2.3169564630401876e-06,
+          "rank_pr_c": 53591,
+          "pagerank_variante_d": 3.0398364274603126e-06,
+          "rank_pr_d": 40919,
+          "percentil_pr_d": 45.88,
+          "disparidad_perfil1": 40704,
+          "disparidad_perfil2": -40704
+        },
+        {
+          "id_proveedor": "241999",
+          "rut_proveedor": "59.069.860-1",
+          "nombre_proveedor": "ACCIONA CONSTRUCCION S.A. AGENCIA CHILE",
+          "monto_total_clp": 12243722864.17,
+          "n_ordenes": 2,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 6121861432.085,
+          "organismo_principal": {
+            "codigo_organismo": "7153",
+            "nombre_organismo": "SERVICIO SALUD VINA DEL MAR QUILLOTA",
+            "monto_clp": 12243722864.17,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 203,
+          "percentil_monto": 99.73,
+          "pagerank_variante_a": 1.9564180193239726e-06,
+          "rank_pr_a": 51367,
+          "pagerank_variante_b": 2.6429367063645305e-06,
+          "rank_pr_b": 73860,
+          "percentil_pr_b": 2.31,
+          "pagerank_variante_c": 2.3169564630401876e-06,
+          "rank_pr_c": 53592,
+          "pagerank_variante_d": 3.0416176739910276e-06,
+          "rank_pr_d": 40831,
+          "percentil_pr_d": 45.99,
+          "disparidad_perfil1": 40628,
+          "disparidad_perfil2": -40628
+        },
+        {
+          "id_proveedor": "2023908",
+          "rut_proveedor": "65.234.111-K",
+          "nombre_proveedor": "FUNDACION ANCHORA UC",
+          "monto_total_clp": 10541814276.0,
+          "n_ordenes": 32,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 329431696.125,
+          "organismo_principal": {
+            "codigo_organismo": "7203",
+            "nombre_organismo": "SERVICIO DE SALUD METROPOLITANO SUR ORIENTE",
+            "monto_clp": 10541814276.0,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 242,
+          "percentil_monto": 99.68,
+          "pagerank_variante_a": 1.958275559768703e-06,
+          "rank_pr_a": 36185,
+          "pagerank_variante_b": 2.6483273736109316e-06,
+          "rank_pr_b": 73567,
+          "percentil_pr_b": 2.69,
+          "pagerank_variante_c": 8.68008483208443e-06,
+          "rank_pr_c": 8460,
+          "pagerank_variante_d": 3.0442003786001973e-06,
+          "rank_pr_d": 40708,
+          "percentil_pr_d": 46.16,
+          "disparidad_perfil1": 40466,
+          "disparidad_perfil2": -40466
+        },
+        {
+          "id_proveedor": "1764125",
+          "rut_proveedor": "59.279.070-K",
+          "nombre_proveedor": "ASCH INFRAESTRUCTURAS Y SERVICIOS S.A, AGRNCIA EN",
+          "monto_total_clp": 11798320955.75,
+          "n_ordenes": 1,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 11798320955.75,
+          "organismo_principal": {
+            "codigo_organismo": "7295",
+            "nombre_organismo": "DIRECCION SERVICIO DE SALUD TALCAHUANO",
+            "monto_clp": 11798320955.75,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 214,
+          "percentil_monto": 99.72,
+          "pagerank_variante_a": 1.956360202927119e-06,
+          "rank_pr_a": 52114,
+          "pagerank_variante_b": 2.658872065843119e-06,
+          "rank_pr_b": 73066,
+          "percentil_pr_b": 3.36,
+          "pagerank_variante_c": 2.1479437118582833e-06,
+          "rank_pr_c": 72429,
+          "pagerank_variante_d": 3.0808847411113044e-06,
+          "rank_pr_d": 39229,
+          "percentil_pr_d": 48.11,
+          "disparidad_perfil1": 39015,
+          "disparidad_perfil2": -39015
+        },
+        {
+          "id_proveedor": "24656",
+          "rut_proveedor": "83.728.100-8",
+          "nombre_proveedor": "SOC CONSTRUCTORA RIO LIMARI LIMITADA",
+          "monto_total_clp": 12787890037.31,
+          "n_ordenes": 8,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 1598486254.66375,
+          "organismo_principal": {
+            "codigo_organismo": "7052",
+            "nombre_organismo": "SERVICIO DE SALUD COQUIMBO",
+            "monto_clp": 12787890037.31,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 194,
+          "percentil_monto": 99.74,
+          "pagerank_variante_a": 1.957621731708242e-06,
+          "rank_pr_a": 40137,
+          "pagerank_variante_b": 2.6801300426835995e-06,
+          "rank_pr_b": 71889,
+          "percentil_pr_b": 4.91,
+          "pagerank_variante_c": 3.553068979538496e-06,
+          "rank_pr_c": 24673,
+          "pagerank_variante_d": 3.1104893434021993e-06,
+          "rank_pr_d": 38193,
+          "percentil_pr_d": 49.48,
+          "disparidad_perfil1": 37999,
+          "disparidad_perfil2": -37999
+        },
+        {
+          "id_proveedor": "69887",
+          "rut_proveedor": "78.064.870-8",
+          "nombre_proveedor": "Constructora San Vicente",
+          "monto_total_clp": 13685144087.65,
+          "n_ordenes": 5,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 2737028817.5299997,
+          "organismo_principal": {
+            "codigo_organismo": "7272",
+            "nombre_organismo": "DIRECCION SERVICIO SALUD METROPOLITANO O",
+            "monto_clp": 13685144087.65,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 181,
+          "percentil_monto": 99.76,
+          "pagerank_variante_a": 1.956639707601745e-06,
+          "rank_pr_a": 48810,
+          "pagerank_variante_b": 2.6831040223427165e-06,
+          "rank_pr_b": 71769,
+          "percentil_pr_b": 5.07,
+          "pagerank_variante_c": 2.9920957014245567e-06,
+          "rank_pr_c": 31663,
+          "pagerank_variante_d": 3.113619281563073e-06,
+          "rank_pr_d": 38086,
+          "percentil_pr_d": 49.62,
+          "disparidad_perfil1": 37905,
+          "disparidad_perfil2": -37905
+        },
+        {
+          "id_proveedor": "1765862",
+          "rut_proveedor": "59.296.220-9",
+          "nombre_proveedor": "CHINA RAILWAY CONSTRUCTION CORPORATION (INTERNATIONAL) LIMITED, AGENCI",
+          "monto_total_clp": 30611029264.17,
+          "n_ordenes": 3,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 10203676421.39,
+          "organismo_principal": {
+            "codigo_organismo": "7052",
+            "nombre_organismo": "SERVICIO DE SALUD COQUIMBO",
+            "monto_clp": 30611029264.17,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 63,
+          "percentil_monto": 99.92,
+          "pagerank_variante_a": 1.957621731708242e-06,
+          "rank_pr_a": 40126,
+          "pagerank_variante_b": 2.6801300426835995e-06,
+          "rank_pr_b": 71878,
+          "percentil_pr_b": 4.93,
+          "pagerank_variante_c": 2.5536128306449853e-06,
+          "rank_pr_c": 42942,
+          "pagerank_variante_d": 3.153868466811133e-06,
+          "rank_pr_d": 37033,
+          "percentil_pr_d": 51.02,
+          "disparidad_perfil1": 36970,
+          "disparidad_perfil2": -36970
+        },
+        {
+          "id_proveedor": "68073",
+          "rut_proveedor": "96.786.880-9",
+          "nombre_proveedor": "SACYR CHILE S A",
+          "monto_total_clp": 155381763537.84,
+          "n_ordenes": 2,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 77690881768.92,
+          "organismo_principal": {
+            "codigo_organismo": "7203",
+            "nombre_organismo": "SERVICIO DE SALUD METROPOLITANO SUR ORIENTE",
+            "monto_clp": 155381763537.84,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 10,
+          "percentil_monto": 99.99,
+          "pagerank_variante_a": 1.958275559768703e-06,
+          "rank_pr_a": 36187,
+          "pagerank_variante_b": 2.6483273736109316e-06,
+          "rank_pr_b": 73569,
+          "percentil_pr_b": 2.69,
+          "pagerank_variante_c": 2.374323246982351e-06,
+          "rank_pr_c": 50709,
+          "pagerank_variante_d": 3.171304501110878e-06,
+          "rank_pr_d": 36588,
+          "percentil_pr_d": 51.61,
+          "disparidad_perfil1": 36578,
+          "disparidad_perfil2": -36578
+        },
+        {
+          "id_proveedor": "24475",
+          "rut_proveedor": "82.496.800-4",
+          "nombre_proveedor": "LABORATORIOS WYETH LLC",
+          "monto_total_clp": 10737872444.18,
+          "n_ordenes": 17,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 631639555.54,
+          "organismo_principal": {
+            "codigo_organismo": "6957",
+            "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+            "monto_clp": 10737872444.18,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 234,
+          "percentil_monto": 99.69,
+          "pagerank_variante_a": 1.9585526087258583e-06,
+          "rank_pr_a": 34894,
+          "pagerank_variante_b": 2.7849376555820727e-06,
+          "rank_pr_b": 60429,
+          "percentil_pr_b": 20.07,
+          "pagerank_variante_c": 5.2760789078170065e-06,
+          "rank_pr_c": 14467,
+          "pagerank_variante_d": 3.181822448887632e-06,
+          "rank_pr_d": 36357,
+          "percentil_pr_d": 51.91,
+          "disparidad_perfil1": 36123,
+          "disparidad_perfil2": -36123
+        },
+        {
+          "id_proveedor": "1670152",
+          "rut_proveedor": "77.006.073-7",
+          "nombre_proveedor": "DFM PHARMA SPA",
+          "monto_total_clp": 12578252059.66,
+          "n_ordenes": 23,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 546880524.3330435,
+          "organismo_principal": {
+            "codigo_organismo": "6957",
+            "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+            "monto_clp": 12578252059.66,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 198,
+          "percentil_monto": 99.74,
+          "pagerank_variante_a": 1.9585526087258583e-06,
+          "rank_pr_a": 34871,
+          "pagerank_variante_b": 2.7849376555820727e-06,
+          "rank_pr_b": 60406,
+          "percentil_pr_b": 20.1,
+          "pagerank_variante_c": 6.448598825408109e-06,
+          "rank_pr_c": 11583,
+          "pagerank_variante_d": 3.190232240400446e-06,
+          "rank_pr_d": 36180,
+          "percentil_pr_d": 52.14,
+          "disparidad_perfil1": 35982,
+          "disparidad_perfil2": -35982
+        },
+        {
+          "id_proveedor": "1810160",
+          "rut_proveedor": "77.447.449-8",
+          "nombre_proveedor": "SINOVAC BIOTECH (CHILE) SPA",
+          "monto_total_clp": 13173300000.0,
+          "n_ordenes": 1,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 13173300000.0,
+          "organismo_principal": {
+            "codigo_organismo": "6957",
+            "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+            "monto_clp": 13173300000.0,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 190,
+          "percentil_monto": 99.75,
+          "pagerank_variante_a": 1.9585526087258583e-06,
+          "rank_pr_a": 34876,
+          "pagerank_variante_b": 2.7849376555820727e-06,
+          "rank_pr_b": 60411,
+          "percentil_pr_b": 20.09,
+          "pagerank_variante_c": 2.149359127574063e-06,
+          "rank_pr_c": 72394,
+          "pagerank_variante_d": 3.192689544139553e-06,
+          "rank_pr_d": 36136,
+          "percentil_pr_d": 52.2,
+          "disparidad_perfil1": 35946,
+          "disparidad_perfil2": -35946
+        },
+        {
+          "id_proveedor": "1683818",
+          "rut_proveedor": "96.867.320-3",
+          "nombre_proveedor": "Esprit de Vie",
+          "monto_total_clp": 26500116385.54,
+          "n_ordenes": 17,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 1558830375.6200001,
+          "organismo_principal": {
+            "codigo_organismo": "6957",
+            "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+            "monto_clp": 26500116385.54,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 75,
+          "percentil_monto": 99.9,
+          "pagerank_variante_a": 1.9585526087258583e-06,
+          "rank_pr_a": 34873,
+          "pagerank_variante_b": 2.7849376555820727e-06,
+          "rank_pr_b": 60408,
+          "percentil_pr_b": 20.1,
+          "pagerank_variante_c": 5.2760789078170065e-06,
+          "rank_pr_c": 14466,
+          "pagerank_variante_d": 3.2298474449589486e-06,
+          "rank_pr_d": 35438,
+          "percentil_pr_d": 53.13,
+          "disparidad_perfil1": 35363,
+          "disparidad_perfil2": -35363
+        },
+        {
+          "id_proveedor": "1593381",
+          "rut_proveedor": "76.455.830-8",
+          "nombre_proveedor": "DIWATTS S.A",
+          "monto_total_clp": 30293080776.0,
+          "n_ordenes": 2,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 15146540388.0,
+          "organismo_principal": {
+            "codigo_organismo": "6957",
+            "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+            "monto_clp": 30293080776.0,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 65,
+          "percentil_monto": 99.91,
+          "pagerank_variante_a": 1.9585526087258583e-06,
+          "rank_pr_a": 34869,
+          "pagerank_variante_b": 2.7849376555820727e-06,
+          "rank_pr_b": 60404,
+          "percentil_pr_b": 20.1,
+          "pagerank_variante_c": 2.344779113839247e-06,
+          "rank_pr_c": 52437,
+          "pagerank_variante_d": 3.236958915897233e-06,
+          "rank_pr_d": 35334,
+          "percentil_pr_d": 53.26,
+          "disparidad_perfil1": 35269,
+          "disparidad_perfil2": -35269
+        },
+        {
+          "id_proveedor": "1815860",
+          "rut_proveedor": "77.248.157-8",
+          "nombre_proveedor": "PROLESUR S.A.",
+          "monto_total_clp": 34133583103.2,
+          "n_ordenes": 3,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 11377861034.4,
+          "organismo_principal": {
+            "codigo_organismo": "6957",
+            "nombre_organismo": "CENTRAL DE ABASTECIMIENTO DEL SISTEMA NACIONAL DE SERVICIO DE SALUD",
+            "monto_clp": 34133583103.2,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 54,
+          "percentil_monto": 99.93,
+          "pagerank_variante_a": 1.9585526087258583e-06,
+          "rank_pr_a": 34878,
+          "pagerank_variante_b": 2.7849376555820727e-06,
+          "rank_pr_b": 60413,
+          "percentil_pr_b": 20.09,
+          "pagerank_variante_c": 2.540199100104431e-06,
+          "rank_pr_c": 43323,
+          "pagerank_variante_d": 3.2433044829571602e-06,
+          "rank_pr_d": 35230,
+          "percentil_pr_d": 53.4,
+          "disparidad_perfil1": 35176,
+          "disparidad_perfil2": -35176
+        },
+        {
+          "id_proveedor": "1371124",
+          "rut_proveedor": "76.011.846-k",
+          "nombre_proveedor": "Elvis",
+          "monto_total_clp": 21506320220.0,
+          "n_ordenes": 1,
+          "n_organismos_distintos": 1,
+          "ticket_promedio": 21506320220.0,
+          "organismo_principal": {
+            "codigo_organismo": "88102",
+            "nombre_organismo": "I MUNICIPALIDAD DE PROVIDENCIA",
+            "monto_clp": 21506320220.0,
+            "pct_ventas_proveedor": 100.0
+          },
+          "rank_monto": 101,
+          "percentil_monto": 99.87,
+          "pagerank_variante_a": 1.955640830110224e-06,
+          "rank_pr_a": 60946,
+          "pagerank_variante_b": 2.764735308840327e-06,
+          "rank_pr_b": 63204,
+          "percentil_pr_b": 16.4,
+          "pagerank_variante_c": 2.2491427747596443e-06,
+          "rank_pr_c": 58811,
+          "pagerank_variante_d": 3.2768380129491817e-06,
+          "rank_pr_d": 34713,
+          "percentil_pr_d": 54.09,
+          "disparidad_perfil1": 34612,
+          "disparidad_perfil2": -34612
+        }
+      ]
+    },
+    "perfil_2_bajo_monto_alto_pagerank": {
+      "definicion": "Proveedores con altísimo PageRank (Top 150), abasteciendo a decenas/cientos de organismos, pero con facturación total moderada/baja.",
+      "total_candidatos": 109,
+      "top15": [
+        {
+          "id_proveedor": "1993759",
+          "rut_proveedor": "78.035.734-7",
+          "nombre_proveedor": "LAS ARAUCARIAS SPA",
+          "monto_total_clp": 236081531.98,
+          "n_ordenes": 518,
+          "n_organismos_distintos": 293,
+          "ticket_promedio": 455755.85324324324,
+          "organismo_principal": {
+            "codigo_organismo": "6946",
+            "nombre_organismo": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
+            "monto_clp": 6730045.0,
+            "pct_ventas_proveedor": 2.85
+          },
+          "rank_monto": 6379,
+          "percentil_monto": 91.56,
+          "pagerank_variante_a": 3.178960667670142e-06,
+          "rank_pr_a": 112,
+          "pagerank_variante_b": 0.00024266797602772385,
+          "rank_pr_b": 88,
+          "percentil_pr_b": 99.88,
+          "pagerank_variante_c": 0.00012859174706182085,
+          "rank_pr_c": 357,
+          "pagerank_variante_d": 0.0002170288330119221,
+          "rank_pr_d": 120,
+          "percentil_pr_d": 99.84,
+          "disparidad_perfil1": -6259,
+          "disparidad_perfil2": 6259
+        },
+        {
+          "id_proveedor": "1820483",
+          "rut_proveedor": "76.729.781-5",
+          "nombre_proveedor": "LYP GROUP SPA",
+          "monto_total_clp": 263251064.58,
+          "n_ordenes": 411,
+          "n_organismos_distintos": 271,
+          "ticket_promedio": 640513.5391240877,
+          "organismo_principal": {
+            "codigo_organismo": "111870",
+            "nombre_organismo": "DIVISION LOGISTICA DEL EJERCITO",
+            "monto_clp": 14095550.0,
+            "pct_ventas_proveedor": 5.35
+          },
+          "rank_monto": 5921,
+          "percentil_monto": 92.17,
+          "pagerank_variante_a": 2.882789608053925e-06,
+          "rank_pr_a": 207,
+          "pagerank_variante_b": 0.0002239023122293556,
+          "rank_pr_b": 115,
+          "percentil_pr_b": 99.85,
+          "pagerank_variante_c": 0.00010017930999043496,
+          "rank_pr_c": 515,
+          "pagerank_variante_d": 0.0002020262835864112,
+          "rank_pr_d": 148,
+          "percentil_pr_d": 99.8,
+          "disparidad_perfil1": -5773,
+          "disparidad_perfil2": 5773
+        },
+        {
+          "id_proveedor": "1581875",
+          "rut_proveedor": "76.779.675-7",
+          "nombre_proveedor": "Integramundo spa",
+          "monto_total_clp": 309018420.5500002,
+          "n_ordenes": 569,
+          "n_organismos_distintos": 299,
+          "ticket_promedio": 543090.3700351497,
+          "organismo_principal": {
+            "codigo_organismo": "1034640",
+            "nombre_organismo": "CORPORACION MUNICIPAL DE PENALOLEN PARA EL DESARROLO SOCIAL CORMUP",
+            "monto_clp": 23401350.0,
+            "pct_ventas_proveedor": 7.57
+          },
+          "rank_monto": 5263,
+          "percentil_monto": 93.04,
+          "pagerank_variante_a": 3.3348214195846816e-06,
+          "rank_pr_a": 94,
+          "pagerank_variante_b": 0.00024076400707523138,
+          "rank_pr_b": 92,
+          "percentil_pr_b": 99.88,
+          "pagerank_variante_c": 0.00012429464659658617,
+          "rank_pr_c": 378,
+          "pagerank_variante_d": 0.00021313806280824553,
+          "rank_pr_d": 130,
+          "percentil_pr_d": 99.83,
+          "disparidad_perfil1": -5133,
+          "disparidad_perfil2": 5133
+        },
+        {
+          "id_proveedor": "31977",
+          "rut_proveedor": "77.431.210-2",
+          "nombre_proveedor": "Ascarcon Ltda.",
+          "monto_total_clp": 336958806.3500001,
+          "n_ordenes": 576,
+          "n_organismos_distintos": 278,
+          "ticket_promedio": 584997.9276909723,
+          "organismo_principal": {
+            "codigo_organismo": "93774",
+            "nombre_organismo": "I MUNICIPALIDAD DE SAN CLEMENTE",
+            "monto_clp": 11383540.0,
+            "pct_ventas_proveedor": 3.38
+          },
+          "rank_monto": 4929,
+          "percentil_monto": 93.48,
+          "pagerank_variante_a": 3.1453527424654e-06,
+          "rank_pr_a": 125,
+          "pagerank_variante_b": 0.00022739569780750015,
+          "rank_pr_b": 108,
+          "percentil_pr_b": 99.86,
+          "pagerank_variante_c": 0.00013812627909735024,
+          "rank_pr_c": 315,
+          "pagerank_variante_d": 0.0002081710290696759,
+          "rank_pr_d": 136,
+          "percentil_pr_d": 99.82,
+          "disparidad_perfil1": -4793,
+          "disparidad_perfil2": 4793
+        },
+        {
+          "id_proveedor": "158288",
+          "rut_proveedor": "10.535.089-9",
+          "nombre_proveedor": "GONZALO PARADA ZÚÑIGA",
+          "monto_total_clp": 368148555.14,
+          "n_ordenes": 733,
+          "n_organismos_distintos": 294,
+          "ticket_promedio": 502249.0520327421,
+          "organismo_principal": {
+            "codigo_organismo": "7340",
+            "nombre_organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE C",
+            "monto_clp": 17879750.0,
+            "pct_ventas_proveedor": 4.86
+          },
+          "rank_monto": 4638,
+          "percentil_monto": 93.87,
+          "pagerank_variante_a": 3.15963689412287e-06,
+          "rank_pr_a": 116,
+          "pagerank_variante_b": 0.00022945455400154362,
+          "rank_pr_b": 107,
+          "percentil_pr_b": 99.86,
+          "pagerank_variante_c": 0.00015879868328857473,
+          "rank_pr_c": 262,
+          "pagerank_variante_d": 0.00020741745663602505,
+          "rank_pr_d": 139,
+          "percentil_pr_d": 99.82,
+          "disparidad_perfil1": -4499,
+          "disparidad_perfil2": 4499
+        },
+        {
+          "id_proveedor": "1297160",
+          "rut_proveedor": "76.210.028-2",
+          "nombre_proveedor": "COMERCIALIZADORA VICTOR GONZALEZ EIRL",
+          "monto_total_clp": 402167729.48,
+          "n_ordenes": 445,
+          "n_organismos_distintos": 262,
+          "ticket_promedio": 903747.7066966293,
+          "organismo_principal": {
+            "codigo_organismo": "111870",
+            "nombre_organismo": "DIVISION LOGISTICA DEL EJERCITO",
+            "monto_clp": 13416322.899999999,
+            "pct_ventas_proveedor": 3.34
+          },
+          "rank_monto": 4323,
+          "percentil_monto": 94.28,
+          "pagerank_variante_a": 3.0770673888182563e-06,
+          "rank_pr_a": 139,
+          "pagerank_variante_b": 0.00021569805660202058,
+          "rank_pr_b": 129,
+          "percentil_pr_b": 99.83,
+          "pagerank_variante_c": 0.0001126314090981185,
+          "rank_pr_c": 434,
+          "pagerank_variante_d": 0.00020370436362655142,
+          "rank_pr_d": 143,
+          "percentil_pr_d": 99.81,
+          "disparidad_perfil1": -4180,
+          "disparidad_perfil2": 4180
+        },
+        {
+          "id_proveedor": "1731166",
+          "rut_proveedor": "77.163.907-0",
+          "nombre_proveedor": "S&amp;G ECOMMERCE SPA",
+          "monto_total_clp": 410444132.21000004,
+          "n_ordenes": 545,
+          "n_organismos_distintos": 292,
+          "ticket_promedio": 753108.49946789,
+          "organismo_principal": {
+            "codigo_organismo": "7251",
+            "nombre_organismo": "UNIVERSIDAD DE CHILE",
+            "monto_clp": 15975393.0,
+            "pct_ventas_proveedor": 3.89
+          },
+          "rank_monto": 4260,
+          "percentil_monto": 94.37,
+          "pagerank_variante_a": 3.2303598816535673e-06,
+          "rank_pr_a": 105,
+          "pagerank_variante_b": 0.00023834734482230022,
+          "rank_pr_b": 94,
+          "percentil_pr_b": 99.88,
+          "pagerank_variante_c": 0.00013553404362664305,
+          "rank_pr_c": 330,
+          "pagerank_variante_d": 0.00022162940312157252,
+          "rank_pr_d": 116,
+          "percentil_pr_d": 99.85,
+          "disparidad_perfil1": -4144,
+          "disparidad_perfil2": 4144
+        },
+        {
+          "id_proveedor": "1679091",
+          "rut_proveedor": "77.022.743-7",
+          "nombre_proveedor": "EMMANUEL NICOTRA VENTAS, SERVICIOS Y TRANSPORTES E.I.R.L.",
+          "monto_total_clp": 436922291.55,
+          "n_ordenes": 632,
+          "n_organismos_distintos": 349,
+          "ticket_promedio": 691332.7397943038,
+          "organismo_principal": {
+            "codigo_organismo": "7466",
+            "nombre_organismo": "SERVICIO DE SALUD METROPOLI CENTRAL DIRECCION DE ATENCION PRIMARIA",
+            "monto_clp": 14269962.47,
+            "pct_ventas_proveedor": 3.27
+          },
+          "rank_monto": 4074,
+          "percentil_monto": 94.61,
+          "pagerank_variante_a": 3.4274916530092004e-06,
+          "rank_pr_a": 84,
+          "pagerank_variante_b": 0.00028471421041846085,
+          "rank_pr_b": 55,
+          "percentil_pr_b": 99.93,
+          "pagerank_variante_c": 0.00014952950422332994,
+          "rank_pr_c": 279,
+          "pagerank_variante_d": 0.00025823240025142565,
+          "rank_pr_d": 71,
+          "percentil_pr_d": 99.91,
+          "disparidad_perfil1": -4003,
+          "disparidad_perfil2": 4003
+        },
+        {
+          "id_proveedor": "1968353",
+          "rut_proveedor": "77.964.979-2",
+          "nombre_proveedor": "COMERCIALIZADORA DE EQUIPOS COMPUTACIONALES Y TELECOMUNICACIONES DICTEL SPA",
+          "monto_total_clp": 443849718.8800002,
+          "n_ordenes": 777,
+          "n_organismos_distintos": 356,
+          "ticket_promedio": 571235.1594337197,
+          "organismo_principal": {
+            "codigo_organismo": "7251",
+            "nombre_organismo": "UNIVERSIDAD DE CHILE",
+            "monto_clp": 21853612.200000003,
+            "pct_ventas_proveedor": 4.92
+          },
+          "rank_monto": 4033,
+          "percentil_monto": 94.67,
+          "pagerank_variante_a": 3.477540149735521e-06,
+          "rank_pr_a": 76,
+          "pagerank_variante_b": 0.0002917864319988512,
+          "rank_pr_b": 52,
+          "percentil_pr_b": 99.93,
+          "pagerank_variante_c": 0.00019413809108686445,
+          "rank_pr_c": 205,
+          "pagerank_variante_d": 0.000269922100430608,
+          "rank_pr_d": 64,
+          "percentil_pr_d": 99.92,
+          "disparidad_perfil1": -3969,
+          "disparidad_perfil2": 3969
+        },
+        {
+          "id_proveedor": "1399986",
+          "rut_proveedor": "15.940.321-1",
+          "nombre_proveedor": "VALERIA ALEJANDRA RAMÍREZ ARRAU",
+          "monto_total_clp": 468412369.59999996,
+          "n_ordenes": 722,
+          "n_organismos_distintos": 336,
+          "ticket_promedio": 648770.5950138504,
+          "organismo_principal": {
+            "codigo_organismo": "1375151",
+            "nombre_organismo": "HOSPITAL CLINICO METROPOLITANO DE LA FLORIDA DOCTORA ELOISA DIAZ",
+            "monto_clp": 43524607.0,
+            "pct_ventas_proveedor": 9.29
+          },
+          "rank_monto": 3869,
+          "percentil_monto": 94.88,
+          "pagerank_variante_a": 3.163847960870097e-06,
+          "rank_pr_a": 114,
+          "pagerank_variante_b": 0.0002656897235485674,
+          "rank_pr_b": 65,
+          "percentil_pr_b": 99.91,
+          "pagerank_variante_c": 0.00014754204016162583,
+          "rank_pr_c": 284,
+          "pagerank_variante_d": 0.00024316342645746498,
+          "rank_pr_d": 88,
+          "percentil_pr_d": 99.88,
+          "disparidad_perfil1": -3781,
+          "disparidad_perfil2": 3781
+        },
+        {
+          "id_proveedor": "235736",
+          "rut_proveedor": "76.591.500-7",
+          "nombre_proveedor": "Aula Editores",
+          "monto_total_clp": 487283879.7499998,
+          "n_ordenes": 639,
+          "n_organismos_distintos": 311,
+          "ticket_promedio": 762572.5817683878,
+          "organismo_principal": {
+            "codigo_organismo": "86507",
+            "nombre_organismo": "I MUNICIPALIDAD DE PUERTO MONTT",
+            "monto_clp": 14600129.04,
+            "pct_ventas_proveedor": 3.0
+          },
+          "rank_monto": 3746,
+          "percentil_monto": 95.05,
+          "pagerank_variante_a": 3.0985655936150894e-06,
+          "rank_pr_a": 136,
+          "pagerank_variante_b": 0.00025258218122942703,
+          "rank_pr_b": 75,
+          "percentil_pr_b": 99.9,
+          "pagerank_variante_c": 0.00015569580563017406,
+          "rank_pr_c": 272,
+          "pagerank_variante_d": 0.00023682339534442725,
+          "rank_pr_d": 97,
+          "percentil_pr_d": 99.87,
+          "disparidad_perfil1": -3649,
+          "disparidad_perfil2": 3649
+        },
+        {
+          "id_proveedor": "1956954",
+          "rut_proveedor": "77.943.232-7",
+          "nombre_proveedor": "MIX VENTA SPA",
+          "monto_total_clp": 486673966.26,
+          "n_ordenes": 581,
+          "n_organismos_distintos": 266,
+          "ticket_promedio": 837648.8231669535,
+          "organismo_principal": {
+            "codigo_organismo": "111870",
+            "nombre_organismo": "DIVISION LOGISTICA DEL EJERCITO",
+            "monto_clp": 27927818.859999992,
+            "pct_ventas_proveedor": 5.74
+          },
+          "rank_monto": 3750,
+          "percentil_monto": 95.04,
+          "pagerank_variante_a": 3.4275075366437417e-06,
+          "rank_pr_a": 83,
+          "pagerank_variante_b": 0.00021831017929449753,
+          "rank_pr_b": 124,
+          "percentil_pr_b": 99.84,
+          "pagerank_variante_c": 0.00014134589999372578,
+          "rank_pr_c": 306,
+          "pagerank_variante_d": 0.00020779551533396605,
+          "rank_pr_d": 137,
+          "percentil_pr_d": 99.82,
+          "disparidad_perfil1": -3613,
+          "disparidad_perfil2": 3613
+        },
+        {
+          "id_proveedor": "2007480",
+          "rut_proveedor": "78.078.407-5",
+          "nombre_proveedor": "COMERCIAL FTF SPA",
+          "monto_total_clp": 508430887.41999996,
+          "n_ordenes": 747,
+          "n_organismos_distintos": 350,
+          "ticket_promedio": 680630.3713788487,
+          "organismo_principal": {
+            "codigo_organismo": "111870",
+            "nombre_organismo": "DIVISION LOGISTICA DEL EJERCITO",
+            "monto_clp": 17611525.0,
+            "pct_ventas_proveedor": 3.46
+          },
+          "rank_monto": 3639,
+          "percentil_monto": 95.19,
+          "pagerank_variante_a": 3.86993203606965e-06,
+          "rank_pr_a": 33,
+          "pagerank_variante_b": 0.0002929941597838246,
+          "rank_pr_b": 50,
+          "percentil_pr_b": 99.93,
+          "pagerank_variante_c": 0.00018991792123500736,
+          "rank_pr_c": 213,
+          "pagerank_variante_d": 0.0002751616382334796,
+          "rank_pr_d": 60,
+          "percentil_pr_d": 99.92,
+          "disparidad_perfil1": -3579,
+          "disparidad_perfil2": 3579
+        },
+        {
+          "id_proveedor": "1664623",
+          "rut_proveedor": "76.955.038-0",
+          "nombre_proveedor": "IMPORTADORA Y COMERCIALIZADORA FERVET ON LINE LIMITADA",
+          "monto_total_clp": 503950840.62999976,
+          "n_ordenes": 655,
+          "n_organismos_distintos": 302,
+          "ticket_promedio": 769390.5963816791,
+          "organismo_principal": {
+            "codigo_organismo": "6928",
+            "nombre_organismo": "JUNTA NACIONAL DE JARDINES         INFANTILES",
+            "monto_clp": 23818984.07,
+            "pct_ventas_proveedor": 4.73
+          },
+          "rank_monto": 3670,
+          "percentil_monto": 95.15,
+          "pagerank_variante_a": 3.639633736419535e-06,
+          "rank_pr_a": 58,
+          "pagerank_variante_b": 0.0002501833537696494,
+          "rank_pr_b": 81,
+          "percentil_pr_b": 99.89,
+          "pagerank_variante_c": 0.0001639350917843425,
+          "rank_pr_c": 251,
+          "pagerank_variante_d": 0.00023675627006931145,
+          "rank_pr_d": 98,
+          "percentil_pr_d": 99.87,
+          "disparidad_perfil1": -3572,
+          "disparidad_perfil2": 3572
+        },
+        {
+          "id_proveedor": "1783750",
+          "rut_proveedor": "77.351.814-9",
+          "nombre_proveedor": "IMPORTADORA FULLMUEBLES SPA",
+          "monto_total_clp": 502883755.68000007,
+          "n_ordenes": 507,
+          "n_organismos_distintos": 281,
+          "ticket_promedio": 991881.1749112428,
+          "organismo_principal": {
+            "codigo_organismo": "7496",
+            "nombre_organismo": "I MUNICIPALIDAD DE LA COMUNA DE EL BOSQUE",
+            "monto_clp": 14767900.0,
+            "pct_ventas_proveedor": 2.94
+          },
+          "rank_monto": 3677,
+          "percentil_monto": 95.14,
+          "pagerank_variante_a": 3.149441141994924e-06,
+          "rank_pr_a": 123,
+          "pagerank_variante_b": 0.00022698637587469648,
+          "rank_pr_b": 110,
+          "percentil_pr_b": 99.85,
+          "pagerank_variante_c": 0.0001229028088240051,
+          "rank_pr_c": 383,
+          "pagerank_variante_d": 0.00021079591152021942,
+          "rank_pr_d": 133,
+          "percentil_pr_d": 99.82,
+          "disparidad_perfil1": -3544,
+          "disparidad_perfil2": 3544
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "metadata": {
+    "fecha": "2026-11-11 20:14:26",
+    "total_ordenes_validas": 1853435,
+    "total_monto_limpio_clp": 18183716793468.312,
+    "total_proveedores": 75603,
+    "total_organismos": 1165,
+    "total_aristas": 476717
+  },
+  "limpieza_financiera_waterfall": {
+    "monto_bruto_total_pesos": 45797869495511.78,
+    "descuento_ordenes_canceladas_pesos": 9116136133615.035,
+    "monto_bruto_validas_pesos": 36681733361896.75,
+    "ahorro_regla_1_divisas_items_pesos": 17599839182958.36,
+    "ahorro_regla_2_sospechosas_pesos": 898177385452.3699,
+    "monto_limpio_final_pesos": 18183716793468.312,
+    "porcentaje_reduccion_total": 60.3
+  },
+  "desigualdad_y_pareto": {
+    "gini_monto_adjudicado": 0.9435,
+    "gini_pagerank_variante_d": 0.5373,
+    "gini_pagerank_variante_a": 0.0106,
+    "gini_ordenes": 0.8617,
+    "concentracion_gasto": {
+      "top_10_proveedores": {
+        "monto_clp": 3296984072677.3765,
+        "pct_gasto": 18.13
+      },
+      "top_50_proveedores": {
+        "monto_clp": 5768053184558.984,
+        "pct_gasto": 31.72
+      },
+      "top_100_proveedores": {
+        "monto_clp": 7133115533456.825,
+        "pct_gasto": 39.23
+      },
+      "top_1_porciento_756_provs": {
+        "monto_clp": 12146106109822.447,
+        "pct_gasto": 66.8
+      },
+      "top_5_porciento_3780_provs": {
+        "monto_clp": 15670026443731.887,
+        "pct_gasto": 86.18
+      },
+      "top_10_porciento_7560_provs": {
+        "monto_clp": 16788416841933.377,
+        "pct_gasto": 92.33
+      },
+      "top_20_porciento_15120_provs": {
+        "monto_clp": 17575884129993.486,
+        "pct_gasto": 96.66
+      }
+    }
+  },
+  "analisis_persona_natural_vs_juridica": {
+    "empresas_juridicas": {
+      "n_proveedores": 48107,
+      "pct_proveedores": 63.63,
+      "monto_total_clp": 17300092241427.586,
+      "pct_monto_total": 95.14,
+      "n_ordenes": 1613778,
+      "pct_ordenes": 87.07,
+      "ticket_promedio": 10720242.958714016,
+      "pagerank_d_promedio": 8.985779248759388e-06,
+      "orgs_distintos_promedio": 8.59
+    },
+    "personas_naturales": {
+      "n_proveedores": 27338,
+      "pct_proveedores": 36.16,
+      "monto_total_clp": 866663769666.5701,
+      "pct_monto_total": 4.77,
+      "n_ordenes": 238937,
+      "pct_ordenes": 12.89,
+      "ticket_promedio": 3627164.355736324,
+      "pagerank_d_promedio": 4.017376204641671e-06,
+      "orgs_distintos_promedio": 2.31
+    },
+    "otros_sin_rut": {
+      "n_proveedores": 158,
+      "monto_total_clp": 16960782375.08,
+      "n_ordenes": 720
+    }
+  },
+  "top_15_organismos_hubs_estado": [
+    {
+      "node_id": 1000888,
+      "codigo": "7251",
+      "nombre": "UNIVERSIDAD DE CHILE",
+      "sector": "Gob. Central, Universidades",
+      "pagerank_d": 0.006238360536534358,
+      "pagerank_b": 0.006119857736596347,
+      "monto_gasto_clp": 164105711962.54996,
+      "n_ordenes": 41841,
+      "n_proveedores_distintos": 5525
+    },
+    {
+      "node_id": 1000055,
+      "codigo": "111875",
+      "nombre": "DIRECCION DE ABASTECIMIENTO DE LA ARMADA",
+      "sector": "FFAA",
+      "pagerank_d": 0.005642191964050483,
+      "pagerank_b": 0.0055142381684587394,
+      "monto_gasto_clp": 143552056577.60925,
+      "n_ordenes": 40952,
+      "n_proveedores_distintos": 4900
+    },
+    {
+      "node_id": 1000054,
+      "codigo": "111870",
+      "nombre": "DIVISION LOGISTICA DEL EJERCITO",
+      "sector": "FFAA",
+      "pagerank_d": 0.005194212691720932,
+      "pagerank_b": 0.0050716884800735985,
+      "monto_gasto_clp": 151372187666.55032,
+      "n_ordenes": 39340,
+      "n_proveedores_distintos": 4969
+    },
+    {
+      "node_id": 1000074,
+      "codigo": "113812",
+      "nombre": "DIRECCION DE LOGISTICA DE CARABINEROS",
+      "sector": "FFAA",
+      "pagerank_d": 0.004708139898700033,
+      "pagerank_b": 0.004597970648289861,
+      "monto_gasto_clp": 183722964291.13116,
+      "n_ordenes": 34842,
+      "n_proveedores_distintos": 4591
+    },
+    {
+      "node_id": 1000975,
+      "codigo": "7359",
+      "nombre": "SUBSECRETARÍA DE LAS CULTURAS Y LAS ARTES",
+      "sector": "Gob. Central, Universidades",
+      "pagerank_d": 0.004548871836184071,
+      "pagerank_b": 0.004552849257974261,
+      "monto_gasto_clp": 32200279591.04999,
+      "n_ordenes": 4991,
+      "n_proveedores_distintos": 2314
+    },
+    {
+      "node_id": 1000681,
+      "codigo": "6925",
+      "nombre": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
+      "sector": "Gob. Central, Universidades",
+      "pagerank_d": 0.003639240557857412,
+      "pagerank_b": 0.00361017023251343,
+      "monto_gasto_clp": 125435310624.52972,
+      "n_ordenes": 28457,
+      "n_proveedores_distintos": 3601
+    },
+    {
+      "node_id": 1000680,
+      "codigo": "6924",
+      "nombre": "CORP NACIONAL FORESTAL",
+      "sector": "Gob. Central, Universidades",
+      "pagerank_d": 0.0034364774617771814,
+      "pagerank_b": 0.003373702036030818,
+      "monto_gasto_clp": 137710413778.3301,
+      "n_ordenes": 9592,
+      "n_proveedores_distintos": 2739
+    },
+    {
+      "node_id": 1000712,
+      "codigo": "6958",
+      "nombre": "SUBSECRETARIA DEL MINISTERIO DE EDUCACION PUBLICA",
+      "sector": "Gob. Central, Universidades",
+      "pagerank_d": 0.0031364733322150097,
+      "pagerank_b": 0.003197445017179428,
+      "monto_gasto_clp": 82912974829.18967,
+      "n_ordenes": 10246,
+      "n_proveedores_distintos": 2912
+    },
+    {
+      "node_id": 1000737,
+      "codigo": "7011",
+      "nombre": "SERVICIO NACIONAL DEL PATRIMONIO CULTURAL",
+      "sector": "Gob. Central, Universidades",
+      "pagerank_d": 0.002852677543599561,
+      "pagerank_b": 0.0028431988186043687,
+      "monto_gasto_clp": 40763337017.439964,
+      "n_ordenes": 4864,
+      "n_proveedores_distintos": 2237
+    },
+    {
+      "node_id": 1000749,
+      "codigo": "7042",
+      "nombre": "HOSPITAL CLINICO HERMINDA MARTIN",
+      "sector": "Salud",
+      "pagerank_d": 0.002577218675930764,
+      "pagerank_b": 0.002557254913267224,
+      "monto_gasto_clp": 48568447510.7599,
+      "n_ordenes": 14114,
+      "n_proveedores_distintos": 1434
+    },
+    {
+      "node_id": 1000701,
+      "codigo": "6946",
+      "nombre": "FUERZA AEREA DE CHILE COMANDO LOGISTICO",
+      "sector": "FFAA",
+      "pagerank_d": 0.0024184647154096746,
+      "pagerank_b": 0.0023980246882784545,
+      "monto_gasto_clp": 47182088879.029816,
+      "n_ordenes": 11040,
+      "n_proveedores_distintos": 2691
+    },
+    {
+      "node_id": 1000885,
+      "codigo": "7248",
+      "nombre": "MINISTERIO DE OBRAS PUBLICAS DIREC CION GRAL DE OO PP DCYF",
+      "sector": "Obras Públicas",
+      "pagerank_d": 0.002266478921219748,
+      "pagerank_b": 0.002137480610784866,
+      "monto_gasto_clp": 226772308144.8801,
+      "n_ordenes": 11408,
+      "n_proveedores_distintos": 1820
+    },
+    {
+      "node_id": 1000963,
+      "codigo": "7342",
+      "nombre": "CORP ADMINISTRATIVA DEL PODER JUDICIAL",
+      "sector": "Legislativo y judicial",
+      "pagerank_d": 0.0021565045288925275,
+      "pagerank_b": 0.0022073204207602986,
+      "monto_gasto_clp": 43813375765.16991,
+      "n_ordenes": 9705,
+      "n_proveedores_distintos": 2217
+    },
+    {
+      "node_id": 1000780,
+      "codigo": "7079",
+      "nombre": "SUBSECRETARIA DE SALUD PUBLICA",
+      "sector": "Salud",
+      "pagerank_d": 0.002137324820597527,
+      "pagerank_b": 0.002151175670693716,
+      "monto_gasto_clp": 59010458240.50996,
+      "n_ordenes": 6374,
+      "n_proveedores_distintos": 2194
+    },
+    {
+      "node_id": 1000962,
+      "codigo": "7340",
+      "nombre": "SERVICIO NACIONAL DE SALUD HOSPITAL DE C",
+      "sector": "Salud",
+      "pagerank_d": 0.002004839598792558,
+      "pagerank_b": 0.0019800753218474658,
+      "monto_gasto_clp": 27398702372.730164,
+      "n_ordenes": 10789,
+      "n_proveedores_distintos": 1255
+    }
+  ],
+  "matriz_correlacion_spearman": {
+    "Monto Financiero": {
+      "Monto Financiero": 1.0,
+      "Volumen Órdenes": 0.6458,
+      "Capilaridad (Orgs)": 0.4669,
+      "PageRank A (G13)": 0.4025,
+      "PageRank B (Bipartito)": 0.4468,
+      "PageRank C (Frecuencia)": 0.6442,
+      "PageRank D (Log-Financiero)": 0.6542
+    },
+    "Volumen Órdenes": {
+      "Monto Financiero": 0.6458,
+      "Volumen Órdenes": 1.0,
+      "Capilaridad (Orgs)": 0.6916,
+      "PageRank A (G13)": 0.5342,
+      "PageRank B (Bipartito)": 0.6311,
+      "PageRank C (Frecuencia)": 0.9329,
+      "PageRank D (Log-Financiero)": 0.7109
+    },
+    "Capilaridad (Orgs)": {
+      "Monto Financiero": 0.4669,
+      "Volumen Órdenes": 0.6916,
+      "Capilaridad (Orgs)": 1.0,
+      "PageRank A (G13)": 0.6773,
+      "PageRank B (Bipartito)": 0.781,
+      "PageRank C (Frecuencia)": 0.6397,
+      "PageRank D (Log-Financiero)": 0.7814
+    },
+    "PageRank A (G13)": {
+      "Monto Financiero": 0.4025,
+      "Volumen Órdenes": 0.5342,
+      "Capilaridad (Orgs)": 0.6773,
+      "PageRank A (G13)": 1.0,
+      "PageRank B (Bipartito)": 0.654,
+      "PageRank C (Frecuencia)": 0.5912,
+      "PageRank D (Log-Financiero)": 0.6606
+    },
+    "PageRank B (Bipartito)": {
+      "Monto Financiero": 0.4468,
+      "Volumen Órdenes": 0.6311,
+      "Capilaridad (Orgs)": 0.781,
+      "PageRank A (G13)": 0.654,
+      "PageRank B (Bipartito)": 1.0,
+      "PageRank C (Frecuencia)": 0.7121,
+      "PageRank D (Log-Financiero)": 0.9512
+    },
+    "PageRank C (Frecuencia)": {
+      "Monto Financiero": 0.6442,
+      "Volumen Órdenes": 0.9329,
+      "Capilaridad (Orgs)": 0.6397,
+      "PageRank A (G13)": 0.5912,
+      "PageRank B (Bipartito)": 0.7121,
+      "PageRank C (Frecuencia)": 1.0,
+      "PageRank D (Log-Financiero)": 0.7847
+    },
+    "PageRank D (Log-Financiero)": {
+      "Monto Financiero": 0.6542,
+      "Volumen Órdenes": 0.7109,
+      "Capilaridad (Orgs)": 0.7814,
+      "PageRank A (G13)": 0.6606,
+      "PageRank B (Bipartito)": 0.9512,
+      "PageRank C (Frecuencia)": 0.7847,
+      "PageRank D (Log-Financiero)": 1.0
+    }
+  },
+  "matriz_correlacion_kendall": {
+    "Monto Financiero": {
+      "Monto Financiero": 1.0,
+      "Volumen Órdenes": 0.4608,
+      "Capilaridad (Orgs)": 0.3191,
+      "PageRank A (G13)": 0.279,
+      "PageRank B (Bipartito)": 0.3075,
+      "PageRank C (Frecuencia)": 0.451,
+      "PageRank D (Log-Financiero)": 0.4654
+    },
+    "Volumen Órdenes": {
+      "Monto Financiero": 0.4608,
+      "Volumen Órdenes": 1.0,
+      "Capilaridad (Orgs)": 0.5678,
+      "PageRank A (G13)": 0.3917,
+      "PageRank B (Bipartito)": 0.4578,
+      "PageRank C (Frecuencia)": 0.8163,
+      "PageRank D (Log-Financiero)": 0.5196
+    },
+    "Capilaridad (Orgs)": {
+      "Monto Financiero": 0.3191,
+      "Volumen Órdenes": 0.5678,
+      "Capilaridad (Orgs)": 1.0,
+      "PageRank A (G13)": 0.5301,
+      "PageRank B (Bipartito)": 0.6579,
+      "PageRank C (Frecuencia)": 0.4646,
+      "PageRank D (Log-Financiero)": 0.6501
+    },
+    "PageRank A (G13)": {
+      "Monto Financiero": 0.279,
+      "Volumen Órdenes": 0.3917,
+      "Capilaridad (Orgs)": 0.5301,
+      "PageRank A (G13)": 1.0,
+      "PageRank B (Bipartito)": 0.5084,
+      "PageRank C (Frecuencia)": 0.4303,
+      "PageRank D (Log-Financiero)": 0.5139
+    },
+    "PageRank B (Bipartito)": {
+      "Monto Financiero": 0.3075,
+      "Volumen Órdenes": 0.4578,
+      "Capilaridad (Orgs)": 0.6579,
+      "PageRank A (G13)": 0.5084,
+      "PageRank B (Bipartito)": 1.0,
+      "PageRank C (Frecuencia)": 0.5264,
+      "PageRank D (Log-Financiero)": 0.8398
+    },
+    "PageRank C (Frecuencia)": {
+      "Monto Financiero": 0.451,
+      "Volumen Órdenes": 0.8163,
+      "Capilaridad (Orgs)": 0.4646,
+      "PageRank A (G13)": 0.4303,
+      "PageRank B (Bipartito)": 0.5264,
+      "PageRank C (Frecuencia)": 1.0,
+      "PageRank D (Log-Financiero)": 0.579
+    },
+    "PageRank D (Log-Financiero)": {
+      "Monto Financiero": 0.4654,
+      "Volumen Órdenes": 0.5196,
+      "Capilaridad (Orgs)": 0.6501,
+      "PageRank A (G13)": 0.5139,
+      "PageRank B (Bipartito)": 0.8398,
+      "PageRank C (Frecuencia)": 0.579,
+      "PageRank D (Log-Financiero)": 1.0
+    }
+  }
+}

@@ -1,0 +1,404 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{geometry}
+\geometry{top=1.8cm, bottom=1.8cm, left=1.8cm, right=1.8cm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{graphicx}
+
+\definecolor{uchileblue}{RGB}{0,56,118}
+\definecolor{uchilered}{RGB}{180,30,30}
+\definecolor{codebg}{RGB}{246,248,250}
+\definecolor{codeframe}{RGB}{208,215,222}
+\definecolor{rowgray}{RGB}{242,245,249}
+\definecolor{okgreen}{RGB}{20,120,50}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=uchileblue,
+    urlcolor=uchileblue
+}
+
+\lstdefinestyle{clusterstyle}{
+    backgroundcolor=\color{codebg},
+    frame=single,
+    rulecolor=\color{codeframe},
+    basicstyle=\ttfamily\scriptsize,
+    breaklines=true,
+    numbers=none,
+    keywordstyle=\color{uchileblue}\bfseries,
+    commentstyle=\color{okgreen}\itshape,
+    stringstyle=\color{uchilered},
+    showstringspaces=false,
+    tabsize=2,
+    literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'\i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {ñ}{{\~n}}1 {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1 {Ñ}{{\~N}}1
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\textbf{CC5212 -- Procesamiento Masivo de Datos} | Plan de Ejecución en Cluster}
+\fancyhead[R]{\footnotesize\textbf{Grupo 13 -- ChileCompra 2025}}
+\fancyfoot[C]{\footnotesize\thepage}
+
+\titleformat{\section}{\normalsize\bfseries\color{uchileblue}}{\thesection.}{0.4em}{}[\titlerule]
+\titleformat{\subsection}{\small\bfseries\color{uchileblue!85!black}}{\thesubsection.}{0.4em}{}
+\titlespacing*{\section}{0pt}{1.8ex}{1.0ex}
+\titlespacing*{\subsection}{0pt}{1.2ex}{0.6ex}
+
+\begin{document}
+\sloppy
+
+\begin{center}
+    {\scshape\footnotesize Universidad de Chile -- Departamento de Ciencias de la Computación -- CC5212}\\[0.2cm]
+    {\Large\bfseries\color{uchileblue} Guía Directa de Ejecución en el Cluster (\texttt{uhadoop}) y División de Trabajo (Grupo 13)}\\[0.15cm]
+    {\small Continuación del Trabajo Previo de Preparación de Datos hacia Apache Pig y Apache Giraph}
+\end{center}
+\vspace{-0.2cm}
+\hrule
+\vspace{0.25cm}
+
+% ============================================================================
+% 1. PUNTO DE PARTIDA Y AJUSTES CLAVE
+% ============================================================================
+\section{Punto de Partida (Trabajo Previo) y Ajustes según Feedback del Profesor}
+
+En el trabajo previo de preparación de datos (Colab del Grupo 13) ya se procesaron los $5.141.167$ registros de ChileCompra 2025, corrigiendo las distorsiones de moneda ($45$ órdenes corregidas y $21$ anomalías descartadas $\ge \$10.000\text{M CLP}$) y generando los archivos base en Google Drive:
+\begin{itemize}[leftmargin=*, nosep]
+    \item \texttt{ordenes\_limpias.tsv.bz2} ($1.856.046$ órdenes únicas, $30$ columnas, columna \texttt{usar == 1} para las $1.853.398$ válidas) y \texttt{ordenes\_muestra.tsv} ($10.000$ filas).
+    \item \texttt{nodos.tsv} ($76.768$ nodos con IDs disjuntos: \texttt{1XXXXXX} organismos y \texttt{2XXXXXX} proveedores) y \texttt{aristas.tsv} ($476.709$ aristas con \texttt{origen}, \texttt{destino}, \texttt{n\_ordenes}, \texttt{monto\_total\_clp} y \texttt{log\_monto}).
+\end{itemize}
+
+\vspace{0.15cm}
+\noindent\textbf{Ajustes técnicos para cumplir con lo solicitado por el Prof.\ Alberto Moya:}
+\begin{enumerate}[leftmargin=*, nosep]
+    \item \textbf{Grafo Bipartito Bidireccional ($O \leftrightarrow P$) en Formato JSON de Lab 8:} En el trabajo previo, \texttt{aristas.tsv} solo tiene aristas dirigidas $O \to P$. En un grafo dirigido puro, los $1.165$ organismos tienen grado de entrada cero ($\text{deg}^-(u)=0$) y quedan todos empatados con el PageRank mínimo ($1,95 \times 10^{-6}$). Al duplicar cada arista en ambos sentidos ($O \leftrightarrow P$) y convertirla al formato JSON del Laboratorio 8, la importancia fluye entre organismos y proveedores.
+    \item \textbf{PageRank Ponderado ($w_{uv} = \ln(1 + M_{uv})$) y los 2 Perfiles del Profesor:} Además del PageRank estándar del Lab 8, ejecutaremos una clase Java con pesos logarítmicos para cruzar el ranking financiero (Pig) con el estructural (Giraph) e identificar:
+    \begin{itemize}[nosep]
+        \item \textbf{Perfil 1 (Alto Monto y Bajo PageRank):} Proveedores con contratos millonarios concentrados en un solo organismo.
+        \item \textbf{Perfil 2 (Bajo/Moderado Monto y Alto PageRank):} Proveedores que abastecen transversalmente a los organismos más críticos del Estado.
+    \end{itemize}
+\end{enumerate}
+
+% ============================================================================
+% 2. DIVISIÓN DEL TRABAJO ENTRE 3 INTEGRANTES
+% ============================================================================
+\section{División del Trabajo entre 3 Integrantes}
+
+Los Integrantes 1 y 2 trabajan **en paralelo** sobre el cluster \texttt{uhadoop.dcc.uchile.cl} sin bloquearse mutuamente:
+
+\begin{table}[h!]
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.22}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{2.6cm}p{4.3cm}p{5.2cm}p{4.0cm}}
+\toprule
+\rowcolor{uchileblue!12}
+\textbf{Integrante} & \textbf{Módulo Responsable} & \textbf{Tareas Concretas} & \textbf{Entregables} \\
+\midrule
+\textbf{Integrante 1}\newline \textit{Apache Pig y HDFS} & Rankings financieros, de volumen y agregaciones sectoriales en \textbf{Apache Pig}. &
+1. Subir \texttt{ordenes\_muestra.tsv} y \texttt{ordenes\_limpias.tsv.bz2} a HDFS.\newline
+2. Ejecutar \texttt{rankings\_g13.pig} en muestra y en el dataset completo.\newline
+3. Medir tiempos con \texttt{time} y descargar los rankings con \texttt{-getmerge}. &
+\textbullet\ \texttt{ranking\_por\_monto.tsv}\newline
+\textbullet\ \texttt{ranking\_por\_ordenes.tsv}\newline
+\textbullet\ \texttt{ranking\_por\_organismos.tsv}\newline
+\textbullet\ Tiempos de ejecución de Pig. \\
+\rowcolor{rowgray}
+\textbf{Integrante 2}\newline \textit{Apache Giraph} & Conversión del grafo al formato Lab 8 y ejecución de \textbf{PageRank en Giraph}. &
+1. Convertir \texttt{aristas.tsv} a JSON dirigido y bidireccional.\newline
+2. Ejecutar PageRank estándar (\texttt{SimplePageRankComputation}) y PageRank Ponderado (\texttt{WeightedPageRankJsonComputation}).\newline
+3. Medir tiempos de los 30 \textit{supersteps} y descargar resultados. &
+\textbullet\ \texttt{pr\_dirigido.tsv}\newline
+\textbullet\ \texttt{pr\_bidir\_estandar.tsv}\newline
+\textbullet\ \texttt{pr\_bidir\_ponderado.tsv}\newline
+\textbullet\ Tiempos y logs de Giraph. \\
+\textbf{Integrante 3}\newline \textit{Cruce de Perfiles e Informe Final} & Cruce relacional (Pig + Giraph + \texttt{nodos.tsv}), análisis de perfiles y redacción final. &
+1. Cruzar los rankings del Integrante 1 y los PageRank del Integrante 2 usando \texttt{nodos.tsv}.\newline
+2. Extraer tablas y gráficos de los \textbf{Perfiles 1 y 2 del profesor}.\newline
+3. Consolidar el informe final y la presentación con métricas y tiempos. &
+\textbullet\ Tablas de Perfiles 1 y 2.\newline
+\textbullet\ Gráficos comparativos.\newline
+\textbullet\ Informe PDF y presentación final del grupo. \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+% ============================================================================
+% 3. PASO A PASO: INTEGRANTE 1 (APACHE PIG)
+% ============================================================================
+\section{Integrante 1: Ejecución de Rankings en Apache Pig}
+
+\subsection{1. Crear el script \texttt{rankings\_g13.pig} (compatible con las 30 columnas del trabajo previo)}
+Guarda el siguiente archivo como \texttt{rankings\_g13.pig}. El filtro \texttt{usar == 1} descarta automáticamente la fila de cabecera y las $2.648$ órdenes excluidas en el trabajo previo:
+
+\begin{lstlisting}[style=clusterstyle]
+-- Archivo: rankings_g13.pig
+raw_orders = LOAD '$INPUT_ORDENES' USING PigStorage('\t') AS (
+    codigo:chararray, mes:int, fecha_envio:chararray, fecha_creacion:chararray,
+    fecha_aceptacion:chararray, estado:chararray, estado_proveedor:chararray,
+    tipo:chararray, procedencia:chararray, cod_licitacion:chararray,
+    cod_convenio_marco:chararray, moneda:chararray, monto_original:double,
+    monto_clp:double, monto_clp_corr:double, monto_corregido:int,
+    monto_clp_limpio:double, flag_monto:chararray, n_items:int,
+    cod_organismo:chararray, organismo:chararray, sector:chararray,
+    region_comprador:chararray, proveedor_id:chararray, rut_proveedor:chararray,
+    nombre_proveedor:chararray, es_persona_natural:chararray,
+    region_proveedor:chararray, actividad_proveedor:chararray, usar:int
+);
+
+valid_orders = FILTER raw_orders BY usar == 1;
+
+by_provider = GROUP valid_orders BY (proveedor_id, rut_proveedor, nombre_proveedor, es_persona_natural);
+
+provider_metrics = FOREACH by_provider {
+    orgs_unicos = DISTINCT valid_orders.cod_organismo;
+    GENERATE
+        FLATTEN(group) AS (proveedor_id, rut_proveedor, nombre_proveedor, es_persona_natural),
+        SUM(valid_orders.monto_clp_limpio) AS monto_total_clp,
+        COUNT(valid_orders) AS total_ordenes,
+        COUNT(orgs_unicos) AS total_organismos_distintos;
+};
+
+rank_by_monto = ORDER provider_metrics BY monto_total_clp DESC;
+STORE rank_by_monto INTO '$OUTPUT_DIR/ranking_por_monto' USING PigStorage('\t');
+
+rank_by_ordenes = ORDER provider_metrics BY total_ordenes DESC;
+STORE rank_by_ordenes INTO '$OUTPUT_DIR/ranking_por_ordenes' USING PigStorage('\t');
+
+rank_by_organismos = ORDER provider_metrics BY total_organismos_distintos DESC;
+STORE rank_by_organismos INTO '$OUTPUT_DIR/ranking_por_organismos' USING PigStorage('\t');
+\end{lstlisting}
+
+\subsection{2. Subir datos a HDFS, ejecutar Pig y descargar resultados}
+\begin{lstlisting}[style=clusterstyle, language=bash]
+# 1. Subir archivos al servidor uhadoop (desde tu terminal)
+scp ordenes_muestra.tsv ordenes_limpias.tsv.bz2 rankings_g13.pig usuario@uhadoop.dcc.uchile.cl:~/
+
+# 2. Conectarse a uhadoop y cargar datos en HDFS (Pig lee .bz2 directamente sin descomprimir)
+ssh usuario@uhadoop.dcc.uchile.cl
+hdfs dfs -mkdir -p /uhadoop/grupo13/input
+hdfs dfs -put ~/ordenes_muestra.tsv /uhadoop/grupo13/input/
+hdfs dfs -put ~/ordenes_limpias.tsv.bz2 /uhadoop/grupo13/input/
+
+# 3. Probar primero con la muestra (10.000 filas) y luego correr sobre el dataset completo
+time pig -x mapreduce -param INPUT_ORDENES=/uhadoop/grupo13/input/ordenes_muestra.tsv \
+    -param OUTPUT_DIR=/uhadoop/grupo13/out_pig_muestra ~/rankings_g13.pig
+
+time pig -x mapreduce -param INPUT_ORDENES=/uhadoop/grupo13/input/ordenes_limpias.tsv.bz2 \
+    -param OUTPUT_DIR=/uhadoop/grupo13/out_pig_completo ~/rankings_g13.pig
+
+# 4. Unir y descargar las salidas desde HDFS
+mkdir -p ~/resultados_pig
+hdfs dfs -getmerge /uhadoop/grupo13/out_pig_completo/ranking_por_monto ~/resultados_pig/ranking_por_monto.tsv
+hdfs dfs -getmerge /uhadoop/grupo13/out_pig_completo/ranking_por_ordenes ~/resultados_pig/ranking_por_ordenes.tsv
+hdfs dfs -getmerge /uhadoop/grupo13/out_pig_completo/ranking_por_organismos ~/resultados_pig/ranking_por_organismos.tsv
+\end{lstlisting}
+
+% ============================================================================
+% 4. PASO A PASO: INTEGRANTE 2 (APACHE GIRAPH)
+% ============================================================================
+\section{Integrante 2: Ejecución de PageRank en Apache Giraph}
+
+\subsection{1. Transformar \texttt{aristas.tsv} al formato JSON del Laboratorio 8}
+Giraph en el Laboratorio 8 usa \texttt{JsonLongDoubleFloatDoubleVertexInputFormat}, donde cada línea es \texttt{[id\_vertice, valor\_inicial, [[id\_vecino, peso], ...]]}. Ejecuta este script Python (\texttt{preparar\_giraph.py}) sobre \texttt{aristas.tsv} para generar tanto el grafo dirigido ($O \to P$) como el bidireccional ($O \leftrightarrow P$) con peso $w_{uv} = \ln(1+M_{uv})$:
+
+\begin{lstlisting}[style=clusterstyle, language=Python]
+# Archivo: preparar_giraph.py
+import json
+from collections import defaultdict
+
+adj_dir, adj_bidir, nodes = defaultdict(list), defaultdict(list), set()
+
+with open("aristas.tsv", "r", encoding="utf-8") as f:
+    for line in f:
+        p = line.strip().split("\t")
+        if len(p) < 5 or not p[0].isdigit():
+            continue
+        u, v, w_log = int(p[0]), int(p[1]), round(float(p[4]), 6)
+        nodes.update([u, v])
+        adj_dir[u].append([v, w_log])
+        adj_bidir[u].append([v, w_log])
+        adj_bidir[v].append([u, w_log])
+
+init_val = round(1.0 / len(nodes), 10)
+with open("giraph_dirigido.txt", "w") as fa, open("giraph_bidireccional.txt", "w") as fb:
+    for n in sorted(nodes):
+        fa.write(json.dumps([n, init_val, adj_dir.get(n, [])]) + "\n")
+        fb.write(json.dumps([n, init_val, adj_bidir.get(n, [])]) + "\n")
+\end{lstlisting}
+
+\subsection{2. Clase Java para el PageRank Ponderado (\texttt{WeightedPageRankJsonComputation.java})}
+Mientras que para el PageRank estándar sin pesos usamos directamente \texttt{SimplePageRankComputation} del Lab 8, para el PageRank Ponderado usamos esta clase que pondera cada mensaje por $w_{uv} / \sum_k w_{uk}$:
+
+\begin{lstlisting}[style=clusterstyle, language=Java]
+package cl.uchile.pmd;
+
+import org.apache.giraph.graph.BasicComputation;
+import org.apache.giraph.graph.Vertex;
+import org.apache.giraph.edge.Edge;
+import org.apache.hadoop.io.DoubleWritable;
+import org.apache.hadoop.io.FloatWritable;
+import org.apache.hadoop.io.LongWritable;
+import java.io.IOException;
+
+public class WeightedPageRankJsonComputation extends BasicComputation<
+    LongWritable, DoubleWritable, FloatWritable, DoubleWritable> {
+
+    public static final int MAX_SUPERSTEPS = 30;
+    public static final double DAMPING = 0.85;
+
+    @Override
+    public void compute(Vertex<LongWritable, DoubleWritable, FloatWritable> vertex,
+                        Iterable<DoubleWritable> messages) throws IOException {
+        if (getSuperstep() >= 1) {
+            double sum = 0.0;
+            for (DoubleWritable msg : messages) sum += msg.get();
+            double rank = ((1.0 - DAMPING) / getTotalNumVertices()) + (DAMPING * sum);
+            vertex.setValue(new DoubleWritable(rank));
+        }
+        if (getSuperstep() < MAX_SUPERSTEPS) {
+            double totalWeight = 0.0;
+            for (Edge<LongWritable, FloatWritable> edge : vertex.getEdges())
+                totalWeight += edge.getValue().get();
+            if (totalWeight > 0.0) {
+                double currentRank = vertex.getValue().get();
+                for (Edge<LongWritable, FloatWritable> edge : vertex.getEdges()) {
+                    double w = edge.getValue().get();
+                    sendMessage(edge.getTargetVertexId(),
+                                new DoubleWritable(currentRank * (w / totalWeight)));
+                }
+            }
+        } else {
+            vertex.voteToHalt();
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection{3. Comandos en \texttt{uhadoop} para ejecutar las 3 corridas de Giraph}
+\begin{lstlisting}[style=clusterstyle, language=bash]
+# 1. Subir los grafos JSON y el archivo Java a uhadoop y pasarlos a HDFS
+scp giraph_dirigido.txt giraph_bidireccional.txt WeightedPageRankJsonComputation.java \
+    usuario@uhadoop.dcc.uchile.cl:~/
+ssh usuario@uhadoop.dcc.uchile.cl
+hdfs dfs -put ~/giraph_dirigido.txt ~/giraph_bidireccional.txt /uhadoop/grupo13/input/
+
+# 2. Localizar el JAR de Giraph del Lab 8
+export GIRAPH_JAR=$(find / -name "giraph-examples*with-dependencies*.jar" 2>/dev/null | head -n 1)
+
+# 3. Corrida 1: PageRank Estándar sobre Grafo Dirigido (O -> P)
+time hadoop jar $GIRAPH_JAR org.apache.giraph.GiraphRunner \
+    org.apache.giraph.examples.SimplePageRankComputation \
+    -vif org.apache.giraph.io.formats.JsonLongDoubleFloatDoubleVertexInputFormat \
+    -vip /uhadoop/grupo13/input/giraph_dirigido.txt \
+    -vof org.apache.giraph.io.formats.IdWithValueTextOutputFormat \
+    -op /uhadoop/grupo13/out_pr_dirigido -w 1 \
+    -mc org.apache.giraph.examples.SimplePageRankComputation\$SimplePageRankMasterCompute
+
+# 4. Corrida 2: PageRank Estándar sobre Grafo Bidireccional (O <-> P sin pesos)
+time hadoop jar $GIRAPH_JAR org.apache.giraph.GiraphRunner \
+    org.apache.giraph.examples.SimplePageRankComputation \
+    -vif org.apache.giraph.io.formats.JsonLongDoubleFloatDoubleVertexInputFormat \
+    -vip /uhadoop/grupo13/input/giraph_bidireccional.txt \
+    -vof org.apache.giraph.io.formats.IdWithValueTextOutputFormat \
+    -op /uhadoop/grupo13/out_pr_bidir_estandar -w 1 \
+    -mc org.apache.giraph.examples.SimplePageRankComputation\$SimplePageRankMasterCompute
+
+# 5. Compilar y ejecutar Corrida 3: PageRank Ponderado Bidireccional (O <-> P con log_monto)
+mkdir -p build
+javac -cp "$(hadoop classpath):$GIRAPH_JAR" -d build WeightedPageRankJsonComputation.java
+cp $GIRAPH_JAR giraph-weighted-g13.jar
+jar uf giraph-weighted-g13.jar -C build .
+
+time hadoop jar giraph-weighted-g13.jar org.apache.giraph.GiraphRunner \
+    cl.uchile.pmd.WeightedPageRankJsonComputation \
+    -vif org.apache.giraph.io.formats.JsonLongDoubleFloatDoubleVertexInputFormat \
+    -vip /uhadoop/grupo13/input/giraph_bidireccional.txt \
+    -vof org.apache.giraph.io.formats.IdWithValueTextOutputFormat \
+    -op /uhadoop/grupo13/out_pr_bidir_ponderado -w 1
+
+# 6. Descargar las 3 salidas de PageRank desde HDFS
+mkdir -p ~/resultados_giraph
+hdfs dfs -getmerge /uhadoop/grupo13/out_pr_dirigido ~/resultados_giraph/pr_dirigido.tsv
+hdfs dfs -getmerge /uhadoop/grupo13/out_pr_bidir_estandar ~/resultados_giraph/pr_bidir_estandar.tsv
+hdfs dfs -getmerge /uhadoop/grupo13/out_pr_bidir_ponderado ~/resultados_giraph/pr_bidir_ponderado.tsv
+\end{lstlisting}
+
+% ============================================================================
+% 5. PASO A PASO: INTEGRANTE 3 (CRUCE DE PERFILES E INFORME)
+% ============================================================================
+\section{Integrante 3: Cruce de Resultados (Perfiles del Profesor) e Informe}
+
+Con los archivos descargados por el Integrante 1 (\texttt{ranking\_por\_monto.tsv}) y el Integrante 2 (\texttt{pr\_bidir\_ponderado.tsv}), más el diccionario \texttt{nodos.tsv} del trabajo previo, el Integrante 3 realiza el cruce final mediante el siguiente script (\texttt{cruzar\_perfiles.py}):
+
+\begin{lstlisting}[style=clusterstyle, language=Python]
+# Archivo: cruzar_perfiles.py
+# Uso: python3 cruzar_perfiles.py nodos.tsv ranking_por_monto.tsv pr_bidir_ponderado.tsv
+import sys
+
+nodos = {}
+with open(sys.argv[1], encoding="utf-8") as f:
+    for line in f:
+        p = line.strip().split("\t")
+        if len(p) >= 5 and p[0].isdigit() and p[1] == "PROVEEDOR":
+            nodos[p[2]] = {"nid": int(p[0]), "rut": p[3], "nombre": p[4]}
+
+pr = {}
+with open(sys.argv[3], encoding="utf-8") as f:
+    for line in f:
+        p = line.strip().split("\t")
+        if len(p) >= 2:
+            pr[int(p[0])] = float(p[1])
+
+datos = []
+with open(sys.argv[2], encoding="utf-8") as f:
+    for line in f:
+        p = line.strip().split("\t")
+        if len(p) >= 7 and p[0] in nodos:
+            nid = nodos[p[0]]["nid"]
+            datos.append({
+                "codigo": p[0], "rut": p[1], "nombre": p[2],
+                "monto": float(p[4]), "ordenes": int(p[5]), "orgs": int(p[6]),
+                "pr": pr.get(nid, 0.0)
+            })
+
+datos.sort(key=lambda x: x["monto"], reverse=True)
+for i, d in enumerate(datos, 1): d["rank_monto"] = i
+
+datos.sort(key=lambda x: x["pr"], reverse=True)
+for i, d in enumerate(datos, 1): d["rank_pr"] = i
+
+perfil_1 = sorted([d for d in datos if d["rank_monto"] <= 50 and d["rank_pr"] > 500], key=lambda x: x["rank_monto"])
+perfil_2 = sorted([d for d in datos if d["rank_pr"] <= 30 and d["rank_monto"] > 150], key=lambda x: x["rank_pr"])
+
+print("=== PERFIL 1: ALTO MONTO Y BAJO PAGERANK (CONTRATOS CONCENTRADOS) ===")
+for d in perfil_1[:10]:
+    print(f"Monto #{d['rank_monto']:<3} | PR #{d['rank_pr']:<6} | Orgs: {d['orgs']:<3} | ${d['monto']/1e6:,.1f}M | {d['nombre']}")
+
+print("\n=== PERFIL 2: BAJO/MODERADO MONTO Y ALTO PAGERANK (PROVEEDORES TRANSVERSALES) ===")
+for d in perfil_2[:10]:
+    print(f"PR #{d['rank_pr']:<3} | Monto #{d['rank_monto']:<6} | Orgs: {d['orgs']:<3} | ${d['monto']/1e6:,.1f}M | {d['nombre']}")
+\end{lstlisting}
+
+\subsection*{Estructura Recomendada para el Informe Final y la Presentación}
+\begin{enumerate}[leftmargin=*, nosep]
+    \item \textbf{Preparación y Limpieza de Datos:} Resumen del trabajo previo sobre los $5,14\text{M}$ de registros, reglas de corrección de divisas ($45$ órdenes corregidas y $21$ excluidas $\ge \$10.000\text{M CLP}$) y reducción de $\$45,80\text{B}$ a $\$18,18\text{B CLP}$.
+    \item \textbf{Arquitectura en el Cluster (\texttt{uhadoop}):} Diseño del pipeline dual (Apache Pig para agregaciones tabulares y Apache Giraph para centralidad en el grafo comprador--proveedor) y tiempos de ejecución registrados.
+    \item \textbf{Efecto de la Topología del Grafo en Giraph:} Comparación entre el grafo dirigido simple ($O \to P$) y el grafo bipartito bidireccional ponderado ($O \leftrightarrow P$ con $w_{uv} = \ln(1+M_{uv})$), mostrando también los organismos públicos más centrales.
+    \item \textbf{Análisis de los 2 Perfiles del Profesor:} Discusión de casos reales del \textbf{Perfil 1} (ej.\ \textit{Sonda S.A.}, \textit{Construcciones y Prestaciones Petroleras S.A.}, \textit{Constructora Digua}) frente al \textbf{Perfil 2} (ej.\ \textit{PRISA S.A.}, \textit{Carozzi S.A.}, \textit{Blue Express S.A.}, \textit{Dimerc S.A.}).
+\end{enumerate}
+
+\end{document}

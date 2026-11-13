@@ -1,0 +1,50 @@
+# ============================================================================
+# CC5212 - Grupo 13: Gitignore para mantener solo código, docs y figuras
+# ============================================================================
+
+# Carpetas del curso no pertenecientes al proyecto final
+catedras/
+lab*/
+"lab */"
+lab 1/
+lab 9/
+
+# Entorno / IDE / Python cache
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datasets crudos, comprimidos y archivos TSV/TXT pesados (no aptos para GitHub)
+*.csv
+*.zip
+*.bz2
+*.tsv
+proyecto_local/data/
+proyecto_local/cluster_code/giraph_json_*.txt
+
+# Artefactos temporales de compilación LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Archivos compilados Java
+*.class
+*.jar
+build/
+dist/
+
+# Excepciones: incluir las salidas finales livianas obtenidas desde HDFS
+!resultados_pig/
+!resultados_pig/*.tsv
+!resultados_pig/*.log
+!resultados_giraph/
+!resultados_giraph/*.tsv
+!resultados_giraph/*.log

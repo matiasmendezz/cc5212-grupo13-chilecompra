@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "fecha_ejecucion": "2026-11-11 16:16:47",
+    "tiempo_procesamiento_segundos": 42.02,
+    "num_workers": 12,
+    "dataset_dir": "/home/matias/Desktop/cc5212/dataset"
+  },
+  "misterio_66_filas": {
+    "filas_totales_reales_csv": 5141233,
+    "filas_propuesta_original": 5141233,
+    "filas_reportadas_colab_g13": 5141167,
+    "diferencia_filas": 66,
+    "filas_con_79_columnas": 5141233,
+    "filas_con_distinto_de_79_columnas": 0,
+    "diagnostico": "Los 12 CSVs locales en /dataset contienen exactamente 5.141.233 filas de datos (más 12 filas de cabecera) y el 100.0% de las filas tienen exactamente 79 columnas. No existen filas truncadas ni columnas corruptas en disco local. La diferencia de 66 filas reportada por el compañero en Google Colab (5.141.167) se originó durante la subida/sincronización de los archivos a Google Drive o al omitir 37 órdenes específicas durante la descarga/carga en Colab.",
+    "desglose_mensual": {
+      "2025-1.csv": {
+        "total_rows": 360196,
+        "cols_79": 360196,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 139431
+      },
+      "2025-2.csv": {
+        "total_rows": 354438,
+        "cols_79": 354438,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 126153
+      },
+      "2025-3.csv": {
+        "total_rows": 422761,
+        "cols_79": 422761,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 148998
+      },
+      "2025-4.csv": {
+        "total_rows": 467436,
+        "cols_79": 467436,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 161770
+      },
+      "2025-5.csv": {
+        "total_rows": 437698,
+        "cols_79": 437698,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 156808
+      },
+      "2025-6.csv": {
+        "total_rows": 436595,
+        "cols_79": 436595,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 155260
+      },
+      "2025-7.csv": {
+        "total_rows": 453605,
+        "cols_79": 453605,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 164088
+      },
+      "2025-8.csv": {
+        "total_rows": 442300,
+        "cols_79": 442300,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 159544
+      },
+      "2025-9.csv": {
+        "total_rows": 407376,
+        "cols_79": 407376,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 150020
+      },
+      "2025-10.csv": {
+        "total_rows": 466450,
+        "cols_79": 466450,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 170512
+      },
+      "2025-11.csv": {
+        "total_rows": 464312,
+        "cols_79": 464312,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 168213
+      },
+      "2025-12.csv": {
+        "total_rows": 428066,
+        "cols_79": 428066,
+        "cols_other": 0,
+        "other_cols_dist": {},
+        "orders_count": 155278
+      }
+    }
+  },
+  "auditoria_ordenes_red": {
+    "ordenes_totales_unicas": 1856075,
+    "ordenes_repetidas_entre_meses": 0,
+    "distribucion_estados": {
+      "Recepcion Conforme": 1288993,
+      "Aceptada": 545622,
+      "Enviada a proveedor": 17963,
+      "En proceso": 857,
+      "Cancelacion solicitada": 2640
+    },
+    "ordenes_validas": {
+      "criterio": "Estado != 'Cancelacion solicitada'",
+      "total_ordenes": 1853435,
+      "esperado_g13": 1853390,
+      "diferencia": 45,
+      "organismos_distintos": 1165,
+      "esperado_organismos_g13": 1165,
+      "proveedores_distintos": 75603,
+      "esperado_proveedores_g13": 75600,
+      "aristas_distintas": 476717,
+      "esperado_aristas_g13": 476703
+    }
+  },
+  "auditoria_financiera": {
+    "monto_bruto_total_pesos": 45797869495493.86,
+    "monto_bruto_total_billones": 45.7979,
+    "monto_bruto_validas_pesos": 36681733361878.81,
+    "monto_bruto_validas_billones": 36.6817,
+    "monto_bruto_canceladas_pesos": 9116136133615.047,
+    "monto_bruto_canceladas_billones": 9.1161,
+    "monto_limpio_validas_pesos": 18183716793468.094,
+    "monto_limpio_validas_billones": 18.1837,
+    "regla_1_corregidos": {
+      "descripcion": "Cabecera en UTM/CLF/USD/EUR con items en pesos CLP. Se toma monto_orig como monto real CLP.",
+      "total_ordenes_all": 45,
+      "total_ordenes_valid": 44,
+      "esperado_g13": 45,
+      "coincidencia_exacta": true
+    },
+    "regla_2_sospechosos": {
+      "descripcion": "Moneda no CLP con monto_clp > 10.000 millones CLP (excluyendo corregidos). Se ajusta a 0.",
+      "total_ordenes_all": 21,
+      "total_ordenes_valid": 20,
+      "esperado_g13": 21,
+      "coincidencia_exacta": true
+    },
+    "regla_3_simbolicos": {
+      "descripcion": "Monto limpio <= 100 pesos CLP.",
+      "total_ordenes_all": 3026,
+      "total_ordenes_valid": 3022,
+      "esperado_g13": 3004
+    }
+  }
+}
