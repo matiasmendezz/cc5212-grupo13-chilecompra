@@ -1,0 +1,52 @@
+=== ANALISIS (B bidireccional) | 75,600 proveedores ===
+
+--- Correlacion de Spearman con el PageRank ---
+monto total        vs PageRank: +0.449
+n. de organismos   vs PageRank: +0.887
+n. de ordenes      vs PageRank: +0.649
+(cerca de 0 = casi no se parecen; cerca de 1 = el PageRank repite ese ranking)
+
+--- Concentracion del gasto entre proveedores ---
+Monto total: 18,183,640,438,449 CLP
+El    1 % superior (756 proveedores) acumula  66.8 % del monto
+El    5 % superior (3,780 proveedores) acumula  86.2 % del monto
+El   10 % superior (7,560 proveedores) acumula  92.3 % del monto
+Indice de Gini del monto: 0.944
+
+--- Perfil 1: alto monto / bajo PageRank (66 proveedores) ---
+Percentil de PageRank (100 = el mas bajo): mediana 46.6, minimo 22.9
+Organismos distintos: mediana 1 | ordenes: mediana 4
+Monto por orden: mediana 4,907,112,845 CLP
+Top 10 por monto:
+  #2    Salud y Vida S.A.                        |   480.8 mil M |    3 OCs | 1 org | 160.28 mil M/orden | pct PR 56
+  #3    sosersa                                  |   456.4 mil M |    6 OCs | 1 org |  76.07 mil M/orden | pct PR 56
+  #8    IDEMIA IDENTITY & SECURITY CHILE         |   231.2 mil M |    7 OCs | 3 org |  33.03 mil M/orden | pct PR 25
+  #9    SERVICIOS ALIMENTICIOS HENDAYA SAC       |   211.8 mil M |    3 OCs | 1 org |  70.60 mil M/orden | pct PR 56
+  #10   SACYR CHILE S A                          |   155.4 mil M |    2 OCs | 1 org |  77.69 mil M/orden | pct PR 97
+  #23   teleton                                  |    59.8 mil M |    1 OCs | 1 org |  59.83 mil M/orden | pct PR 47
+  #27   Francisco                                |    55.4 mil M |    3 OCs | 1 org |  18.47 mil M/orden | pct PR 47
+  #32   Fernando                                 |    48.6 mil M |    3 OCs | 1 org |  16.21 mil M/orden | pct PR 56
+  #36   Nutriplus Alimentacion y Tecnologia S.A. |    45.0 mil M |    4 OCs | 1 org |  11.26 mil M/orden | pct PR 56
+  #43   Gastronomia Integral Ltda                |    38.2 mil M |    2 OCs | 1 org |  19.08 mil M/orden | pct PR 56
+
+--- Perfil 2: bajo monto / alto PageRank (118 proveedores) ---
+Organismos distintos: mediana 307, maximo 601
+Monto total: mediana 1,115.7 millones CLP
+Percentil por monto (100 = el mas bajo): mediana 2.6
+Monto por orden: mediana 1,143,893 CLP
+Top 10 por PageRank:
+  PR #4    SOCOEX CHILE SPA                         |   1143.5 M | 2005 OCs | 601 org | pct monto 3
+  PR #7    DELTA GENERACION SPA                     |   2938.9 M | 3482 OCs | 558 org | pct monto 1
+  PR #9    LEFI SPA                                 |   2717.7 M | 1744 OCs | 539 org | pct monto 1
+  PR #10   PCINBOX SPA                              |   2211.7 M | 2017 OCs | 519 org | pct monto 1
+  PR #11   SUPER SPORT & MEDICAL SPA                |   1635.6 M | 1552 OCs | 504 org | pct monto 2
+  PR #12   EDUARDO AWAD MANZUR                      |   1981.5 M | 2296 OCs | 512 org | pct monto 2
+  PR #13   SKY AIRLINE S A                          |   4890.5 M | 16965 OCs | 460 org | pct monto 1
+  PR #14   SOCIEDAD INMOBILIARIA Y PRESTADORA DE SE |   2769.7 M | 1914 OCs | 493 org | pct monto 1
+  PR #15   INGENIERIA, SOPORTE Y CADENA DE SUMINIST |   2243.8 M | 1725 OCs | 491 org | pct monto 1
+  PR #16   ÁLVARO JOSÉ DEL CAMPO SÁEZ               |   3021.4 M | 1803 OCs | 468 org | pct monto 1
+
+--- Solapamiento con la otra variante (cruce_A_etapa3) ---
+Perfil 1: 66 aca | 66 alla | en comun 66
+Perfil 2: 118 aca | 115 alla | en comun 92
+Spearman entre los dos PageRank: +0.658

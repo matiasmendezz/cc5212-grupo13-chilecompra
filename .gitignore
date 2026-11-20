@@ -1,0 +1,38 @@
+# Carpetas del curso y trabajo local fuera del entregable
+catedras/
+lab*/
+"lab */"
+lab 1/
+lab 9/
+proyecto_local/
+
+# Entorno / IDE / Python cache
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datasets crudos y archivos pesados
+*.csv
+*.zip
+*.rar
+*.bz2
+*.tsv
+
+# Compilados y temporales
+*.log
+*.class
+*.jar
+build/
+dist/
+
+# Excepciones: resultados y análisis entregables del clúster
+!resultados_pig/
+!resultados_pig/*.tsv
+!resultados_pig/*.log
+!resultados_giraph/
+!resultados_giraph/*.tsv
+!resultados_giraph/*.log
+!analisis_cruce/
+!analisis_cruce/**
