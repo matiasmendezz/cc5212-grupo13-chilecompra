@@ -1,9 +1,10 @@
-# Carpetas del curso y trabajo local fuera del entregable
+# Carpetas del curso, datasets crudos y trabajo local fuera del entregable
 catedras/
 lab*/
 "lab */"
 lab 1/
 lab 9/
+dataset/
 proyecto_local/
 
 # Entorno / IDE / Python cache
@@ -28,11 +29,9 @@ build/
 dist/
 
 # Excepciones: resultados y análisis entregables del clúster
-!resultados_pig/
-!resultados_pig/*.tsv
-!resultados_pig/*.log
-!resultados_giraph/
-!resultados_giraph/*.tsv
-!resultados_giraph/*.log
-!analisis_cruce/
-!analisis_cruce/**
+!02_pig/resultados/
+!02_pig/resultados/**
+!03_giraph/resultados/
+!03_giraph/resultados/**
+!04_analisis_cruce/
+!04_analisis_cruce/**
