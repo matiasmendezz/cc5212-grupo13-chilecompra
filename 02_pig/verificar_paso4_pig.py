@@ -10,7 +10,7 @@ de la Parte 4 (contra los valores de referencia de Colab: ~75.600 proveedores,
 import os
 import sys
 
-DIR_RESULTADOS = sys.argv[1] if len(sys.argv) > 1 else "resultados_pig"
+DIR_RESULTADOS = sys.argv[1] if len(sys.argv) > 1 else "02_pig/resultados"
 
 def verificar_ranking_monto(path):
     n_provs = 0

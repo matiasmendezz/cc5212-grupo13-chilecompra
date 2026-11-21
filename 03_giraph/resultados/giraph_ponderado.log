@@ -1,0 +1,122 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.security.authentication.util.KerberosUtil (file:/data/hadoop/hadoop-2.10.0/share/hadoop/common/lib/hadoop-auth-2.10.0.jar) to method sun.security.krb5.Config.getInstance()
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.security.authentication.util.KerberosUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+26/11/20 20:46:20 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/11/20 20:46:21 INFO utils.ConfigurationUtils: No vertex input format specified. Ensure your InputFormat does not require one.
+26/11/20 20:46:21 INFO utils.ConfigurationUtils: No edge output format specified. Ensure your OutputFormat does not require one.
+26/11/20 20:46:21 INFO utils.ConfigurationUtils: Setting custom argument [mapreduce.job.tracker] to [yarn] in GiraphConfiguration
+26/11/20 20:46:21 INFO utils.ConfigurationUtils: Setting custom argument [mapreduce.framework.name] to [yarn] in GiraphConfiguration
+26/11/20 20:46:21 INFO Configuration.deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+26/11/20 20:46:21 INFO Configuration.deprecation: mapreduce.job.counters.limit is deprecated. Instead, use mapreduce.job.counters.max
+26/11/20 20:46:21 INFO Configuration.deprecation: mapred.job.map.memory.mb is deprecated. Instead, use mapreduce.map.memory.mb
+26/11/20 20:46:21 INFO Configuration.deprecation: mapred.job.reduce.memory.mb is deprecated. Instead, use mapreduce.reduce.memory.mb
+26/11/20 20:46:21 INFO Configuration.deprecation: mapred.map.tasks.speculative.execution is deprecated. Instead, use mapreduce.map.speculative
+26/11/20 20:46:21 INFO Configuration.deprecation: mapreduce.user.classpath.first is deprecated. Instead, use mapreduce.job.user.classpath.first
+26/11/20 20:46:21 INFO Configuration.deprecation: mapred.map.max.attempts is deprecated. Instead, use mapreduce.map.maxattempts
+26/11/20 20:46:21 INFO job.GiraphJob: run: Since checkpointing is disabled (default), do not allow any task retries (setting mapred.map.max.attempts = 1, old value = 4)
+26/11/20 20:46:21 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+26/11/20 20:46:21 INFO client.RMProxy: Connecting to ResourceManager at cm/10.10.10.1:8032
+26/11/20 20:46:22 INFO mapreduce.JobSubmitter: number of splits:5
+26/11/20 20:46:23 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+26/11/20 20:46:23 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1794615019286_0077
+26/11/20 20:46:23 INFO conf.Configuration: resource-types.xml not found
+26/11/20 20:46:23 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+26/11/20 20:46:23 INFO resource.ResourceUtils: Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+26/11/20 20:46:23 INFO resource.ResourceUtils: Adding resource type - name = vcores, units = , type = COUNTABLE
+26/11/20 20:46:23 INFO impl.YarnClientImpl: Submitted application application_1794615019286_0077
+26/11/20 20:46:23 INFO mapreduce.Job: The url to track the job: http://cm:8088/proxy/application_1794615019286_0077/
+26/11/20 20:46:23 INFO job.GiraphJob: Tracking URL: http://cm:8088/proxy/application_1794615019286_0077/
+26/11/20 20:46:23 INFO job.GiraphJob: Waiting for resources... Job will start only when it gets all 5 mappers
+26/11/20 20:46:53 INFO job.HaltApplicationUtils$DefaultHaltInstructionsWriter: writeHaltInstructions: To halt after next superstep execute: 'bin/halt-application --zkServer cluster-02:22181 --zkNode /_hadoopBsp/job_1794615019286_0077/_haltComputation'
+26/11/20 20:46:53 INFO mapreduce.Job: Running job: job_1794615019286_0077
+26/11/20 20:46:54 INFO mapreduce.Job: Job job_1794615019286_0077 running in uber mode : false
+26/11/20 20:46:54 INFO mapreduce.Job:  map 100% reduce 0%
+26/11/20 20:47:08 INFO mapreduce.Job: Job job_1794615019286_0077 completed successfully
+26/11/20 20:47:08 INFO mapreduce.Job: Counters: 69
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=1032650
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=39632874
+		HDFS: Number of bytes written=2620931
+		HDFS: Number of read operations=61
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=31
+	Job Counters 
+		Launched map tasks=5
+		Other local map tasks=5
+		Total time spent by all maps in occupied slots (ms)=465174
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=155058
+		Total vcore-milliseconds taken by all map tasks=155058
+		Total megabyte-milliseconds taken by all map tasks=238169088
+	Map-Reduce Framework
+		Map input records=5
+		Map output records=0
+		Input split bytes=220
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=1758
+		CPU time spent (ms)=117140
+		Physical memory (bytes) snapshot=1664901120
+		Virtual memory (bytes) snapshot=14989979648
+		Total committed heap usage (bytes)=969932800
+	EDGE input
+		100.00% done time (ms)=3602
+		99.00% done time (ms)=3277
+	Giraph Stats
+		Aggregate bytes loaded from local disks (out-of-core)=0
+		Aggregate bytes stored to local disks (out-of-core)=0
+		Aggregate edges=953406
+		Aggregate finished vertices=76765
+		Aggregate sent message bytes=203571781
+		Aggregate sent messages=10486626
+		Aggregate vertices=76765
+		Current master task partition=0
+		Current workers=4
+		Last checkpointed superstep=0
+		Lowest percentage of graph in memory so far (out-of-core)=100
+		Sent message bytes=0
+		Sent messages=0
+		Superstep=13
+	Giraph Timers
+		Initialize (ms)=3160
+		Input superstep (ms)=4473
+		Setup (ms)=74
+		Shutdown (ms)=9572
+		Superstep 0 WeightedPageRank (ms)=1046
+		Superstep 1 WeightedPageRank (ms)=438
+		Superstep 10 WeightedPageRank (ms)=370
+		Superstep 11 WeightedPageRank (ms)=407
+		Superstep 12 WeightedPageRank (ms)=296
+		Superstep 2 WeightedPageRank (ms)=792
+		Superstep 3 WeightedPageRank (ms)=790
+		Superstep 4 WeightedPageRank (ms)=688
+		Superstep 5 WeightedPageRank (ms)=640
+		Superstep 6 WeightedPageRank (ms)=577
+		Superstep 7 WeightedPageRank (ms)=497
+		Superstep 8 WeightedPageRank (ms)=466
+		Superstep 9 WeightedPageRank (ms)=402
+		Total (ms)=21548
+	Netty counters
+		Network requests resent for channel failure=0
+		Network requests resent for connection or request failure=0
+		Network requests resent for timeout=0
+	Zookeeper halt node
+		/_hadoopBsp/job_1794615019286_0077/_haltComputation=0
+	Zookeeper server:port
+		cluster-02:22181=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=0
+time elapsed 48769 ms
+
+real	0m59.692s
+user	0m20.797s
+sys	0m7.890s

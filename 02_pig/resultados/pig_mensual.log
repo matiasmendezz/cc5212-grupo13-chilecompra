@@ -1,0 +1,273 @@
+26/11/20 20:51:38 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
+26/11/20 20:51:38 INFO pig.ExecTypeProvider: Trying ExecType : MAPREDUCE
+26/11/20 20:51:38 INFO pig.ExecTypeProvider: Picked MAPREDUCE as the ExecType
+2026-11-20 20:51:39,042 [main] INFO  org.apache.pig.Main - Apache Pig version 0.18.0-SNAPSHOT (r1900865) compiled May 13 2022, 22:15:17
+2026-11-20 20:51:39,042 [main] INFO  org.apache.pig.Main - Logging error messages to: /data/2026/uhadoop/projects/grupo13/pig_1795218699039.log
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.security.authentication.util.KerberosUtil (file:/data/hadoop/hadoop-2.10.0/share/hadoop/common/lib/hadoop-auth-2.10.0.jar) to method sun.security.krb5.Config.getInstance()
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.security.authentication.util.KerberosUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2026-11-20 20:51:39,270 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-11-20 20:51:39,906 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /data/2026/uhadoop/.pigbootup not found
+2026-11-20 20:51:40,022 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2026-11-20 20:51:40,023 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://cm:9000
+2026-11-20 20:51:40,694 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to map-reduce job tracker at: yarn
+2026-11-20 20:51:40,729 [main] INFO  org.apache.pig.PigServer - Pig Script ID for the session: PIG-g13_ranking_mensual.pig-a8f8d846-2e50-4f60-8ccd-71cec018336f
+2026-11-20 20:51:40,729 [main] WARN  org.apache.pig.PigServer - ATS is disabled since yarn.timeline-service.enabled set to false
+2026-11-20 20:51:41,820 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.textoutputformat.separator is deprecated. Instead, use mapreduce.output.textoutputformat.separator
+2026-11-20 20:51:41,867 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: GROUP_BY,ORDER_BY,FILTER
+2026-11-20 20:51:41,896 [main] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2026-11-20 20:51:41,930 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, FilterConstantCalculator, ForEachConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, NestedLimitOptimizer, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitConstantCalculator, SplitFilter, StreamTypeCastInserter]}
+2026-11-20 20:51:41,964 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for ordenes: $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $17, $18, $19, $20, $21, $22, $24, $26, $27, $28
+2026-11-20 20:51:42,027 [main] INFO  org.apache.pig.impl.util.SpillableMemoryManager - Selected heap (G1 Old Gen) of size 1048576000 to monitor. collectionUsageThreshold = 734003200, usageThreshold = 734003200
+2026-11-20 20:51:42,097 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2026-11-20 20:51:42,145 [main] INFO  org.apache.pig.backend.hadoop.executionengine.util.CombinerOptimizerUtil - Choosing to move algebraic foreach to combiner
+2026-11-20 20:51:42,168 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.SecondaryKeyOptimizerMR - Using Secondary Key Optimization for MapReduce node scope-77
+2026-11-20 20:51:42,179 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 4
+2026-11-20 20:51:42,179 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 4
+2026-11-20 20:51:42,259 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:51:42,505 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2026-11-20 20:51:42,530 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2026-11-20 20:51:42,543 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.reduce.markreset.buffer.percent is deprecated. Instead, use mapreduce.reduce.markreset.buffer.percent
+2026-11-20 20:51:42,544 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2026-11-20 20:51:42,548 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+2026-11-20 20:51:42,553 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2026-11-20 20:51:42,555 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2026-11-20 20:51:42,568 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=85429699
+2026-11-20 20:51:42,569 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2026-11-20 20:51:42,570 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.reduce.tasks is deprecated. Instead, use mapreduce.job.reduces
+2026-11-20 20:51:42,570 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2026-11-20 20:51:42,597 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.submit.replication is deprecated. Instead, use mapreduce.client.submit.file.replication
+2026-11-20 20:51:42,968 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/pig-0.18.0-SNAPSHOT-core-h2.jar to DistributedCache through /tmp/temp-746367289/tmp1914498313/pig-0.18.0-SNAPSHOT-core-h2.jar
+2026-11-20 20:51:43,015 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp-746367289/tmp-964715723/automaton-1.11-8.jar
+2026-11-20 20:51:43,060 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp-746367289/tmp1188568659/antlr-runtime-3.4.jar
+2026-11-20 20:51:43,108 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/joda-time-2.9.9.jar to DistributedCache through /tmp/temp-746367289/tmp1106690251/joda-time-2.9.9.jar
+2026-11-20 20:51:43,153 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/RoaringBitmap-shaded-0.7.14.jar to DistributedCache through /tmp/temp-746367289/tmp-1467877331/RoaringBitmap-shaded-0.7.14.jar
+2026-11-20 20:51:43,246 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2026-11-20 20:51:43,258 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2026-11-20 20:51:43,258 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cache
+2026-11-20 20:51:43,259 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2026-11-20 20:51:43,430 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2026-11-20 20:51:43,433 [main] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.job.tracker.http.address is deprecated. Instead, use mapreduce.jobtracker.http.address
+2026-11-20 20:51:43,456 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:51:43,491 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2026-11-20 20:51:43,701 [JobControl] WARN  org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2026-11-20 20:51:43,791 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2026-11-20 20:51:43,802 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input files to process : 1
+2026-11-20 20:51:43,802 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2026-11-20 20:51:43,840 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2026-11-20 20:51:43,953 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2026-11-20 20:51:44,466 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1794615019286_0079
+2026-11-20 20:51:44,757 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2026-11-20 20:51:44,872 [JobControl] INFO  org.apache.hadoop.conf.Configuration - resource-types.xml not found
+2026-11-20 20:51:44,873 [JobControl] INFO  org.apache.hadoop.yarn.util.resource.ResourceUtils - Unable to find 'resource-types.xml'.
+2026-11-20 20:51:44,883 [JobControl] INFO  org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+2026-11-20 20:51:44,883 [JobControl] INFO  org.apache.hadoop.yarn.util.resource.ResourceUtils - Adding resource type - name = vcores, units = , type = COUNTABLE
+2026-11-20 20:51:44,987 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1794615019286_0079
+2026-11-20 20:51:45,049 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://cm:8088/proxy/application_1794615019286_0079/
+2026-11-20 20:51:45,050 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1794615019286_0079
+2026-11-20 20:51:45,051 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases base,mes_prov,ordenes,por_mes_prov,validas
+2026-11-20 20:51:45,051 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: ordenes[2,10],ordenes[-1,-1],validas[15,10],base[16,7],mes_prov[21,11],por_mes_prov[20,15] C: mes_prov[21,11],por_mes_prov[20,15] R: mes_prov[21,11]
+2026-11-20 20:51:45,088 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2026-11-20 20:51:45,089 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1794615019286_0079]
+2026-11-20 20:52:52,368 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 4% complete
+2026-11-20 20:52:52,368 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1794615019286_0079]
+2026-11-20 20:53:34,471 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 8% complete
+2026-11-20 20:53:34,471 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1794615019286_0079]
+2026-11-20 20:53:39,486 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 12% complete
+2026-11-20 20:53:39,486 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1794615019286_0079]
+2026-11-20 20:53:54,535 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 25% complete
+2026-11-20 20:53:54,535 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1794615019286_0079]
+2026-11-20 20:53:55,558 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:53:55,570 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:53:55,767 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:53:55,780 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:53:55,852 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:53:55,863 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:53:55,983 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2026-11-20 20:53:55,985 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2026-11-20 20:53:55,986 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2026-11-20 20:53:55,986 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2026-11-20 20:53:56,008 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=16162470
+2026-11-20 20:53:56,008 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2026-11-20 20:53:56,008 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2026-11-20 20:53:56,152 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/pig-0.18.0-SNAPSHOT-core-h2.jar to DistributedCache through /tmp/temp-746367289/tmp-189395736/pig-0.18.0-SNAPSHOT-core-h2.jar
+2026-11-20 20:53:56,187 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp-746367289/tmp-1346114324/automaton-1.11-8.jar
+2026-11-20 20:53:56,226 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp-746367289/tmp-1436715672/antlr-runtime-3.4.jar
+2026-11-20 20:53:56,272 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/joda-time-2.9.9.jar to DistributedCache through /tmp/temp-746367289/tmp-1493210970/joda-time-2.9.9.jar
+2026-11-20 20:53:56,309 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/RoaringBitmap-shaded-0.7.14.jar to DistributedCache through /tmp/temp-746367289/tmp1903807519/RoaringBitmap-shaded-0.7.14.jar
+2026-11-20 20:53:56,326 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2026-11-20 20:53:56,327 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2026-11-20 20:53:56,327 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cache
+2026-11-20 20:53:56,327 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2026-11-20 20:53:56,366 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2026-11-20 20:53:56,374 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:53:56,389 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2026-11-20 20:53:56,405 [JobControl] WARN  org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2026-11-20 20:53:56,444 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input files to process : 1
+2026-11-20 20:53:56,445 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2026-11-20 20:53:56,446 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2026-11-20 20:53:56,522 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2026-11-20 20:53:56,585 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1794615019286_0080
+2026-11-20 20:53:56,591 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2026-11-20 20:53:56,654 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1794615019286_0080
+2026-11-20 20:53:56,661 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://cm:8088/proxy/application_1794615019286_0080/
+2026-11-20 20:53:56,870 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1794615019286_0080
+2026-11-20 20:53:56,871 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases ordenado,por_mes,top_mes
+2026-11-20 20:53:56,871 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: por_mes[25,10] C:  R: top_mes[26,10],ordenado[27,15]
+2026-11-20 20:54:17,010 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 37% complete
+2026-11-20 20:54:17,010 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1794615019286_0080]
+2026-11-20 20:54:29,038 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 50% complete
+2026-11-20 20:54:29,039 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1794615019286_0080]
+2026-11-20 20:54:32,062 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:54:32,074 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:54:32,157 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:54:32,165 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:54:32,208 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:54:32,214 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:54:32,260 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2026-11-20 20:54:32,261 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2026-11-20 20:54:32,264 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2026-11-20 20:54:32,264 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2026-11-20 20:54:32,273 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=6174
+2026-11-20 20:54:32,276 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2026-11-20 20:54:32,276 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2026-11-20 20:54:32,411 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/pig-0.18.0-SNAPSHOT-core-h2.jar to DistributedCache through /tmp/temp-746367289/tmp1842369465/pig-0.18.0-SNAPSHOT-core-h2.jar
+2026-11-20 20:54:32,455 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp-746367289/tmp-1613534130/automaton-1.11-8.jar
+2026-11-20 20:54:32,504 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp-746367289/tmp-283521374/antlr-runtime-3.4.jar
+2026-11-20 20:54:32,552 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/joda-time-2.9.9.jar to DistributedCache through /tmp/temp-746367289/tmp2071310141/joda-time-2.9.9.jar
+2026-11-20 20:54:32,591 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/RoaringBitmap-shaded-0.7.14.jar to DistributedCache through /tmp/temp-746367289/tmp-605961290/RoaringBitmap-shaded-0.7.14.jar
+2026-11-20 20:54:32,608 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2026-11-20 20:54:32,609 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2026-11-20 20:54:32,609 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cache
+2026-11-20 20:54:32,610 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2026-11-20 20:54:32,635 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2026-11-20 20:54:32,642 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:54:32,654 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2026-11-20 20:54:32,676 [JobControl] WARN  org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2026-11-20 20:54:32,714 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input files to process : 1
+2026-11-20 20:54:32,714 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2026-11-20 20:54:32,714 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2026-11-20 20:54:32,803 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2026-11-20 20:54:32,856 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1794615019286_0081
+2026-11-20 20:54:32,867 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2026-11-20 20:54:32,922 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1794615019286_0081
+2026-11-20 20:54:32,927 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://cm:8088/proxy/application_1794615019286_0081/
+2026-11-20 20:54:33,139 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1794615019286_0081
+2026-11-20 20:54:33,139 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases resultado
+2026-11-20 20:54:33,139 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: resultado[32,12] C:  R: 
+2026-11-20 20:54:50,275 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 62% complete
+2026-11-20 20:54:50,276 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1794615019286_0081]
+2026-11-20 20:54:58,298 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 75% complete
+2026-11-20 20:54:58,299 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1794615019286_0081]
+2026-11-20 20:55:03,325 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:03,338 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:03,420 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:03,426 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:03,459 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:03,465 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:03,498 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2026-11-20 20:55:03,499 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2026-11-20 20:55:03,500 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2026-11-20 20:55:03,500 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 1
+2026-11-20 20:55:03,500 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2026-11-20 20:55:03,599 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/pig-0.18.0-SNAPSHOT-core-h2.jar to DistributedCache through /tmp/temp-746367289/tmp-777519624/pig-0.18.0-SNAPSHOT-core-h2.jar
+2026-11-20 20:55:03,643 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp-746367289/tmp1245500030/automaton-1.11-8.jar
+2026-11-20 20:55:03,678 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp-746367289/tmp327371845/antlr-runtime-3.4.jar
+2026-11-20 20:55:03,724 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/joda-time-2.9.9.jar to DistributedCache through /tmp/temp-746367289/tmp609186240/joda-time-2.9.9.jar
+2026-11-20 20:55:03,772 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/data/hadoop/pig-0.18.0/lib/RoaringBitmap-shaded-0.7.14.jar to DistributedCache through /tmp/temp-746367289/tmp-2010429111/RoaringBitmap-shaded-0.7.14.jar
+2026-11-20 20:55:03,789 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2026-11-20 20:55:03,790 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2026-11-20 20:55:03,790 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cache
+2026-11-20 20:55:03,790 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2026-11-20 20:55:03,826 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2026-11-20 20:55:03,833 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:03,848 [JobControl] INFO  org.apache.hadoop.conf.Configuration.deprecation - yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+2026-11-20 20:55:03,862 [JobControl] WARN  org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2026-11-20 20:55:03,902 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input files to process : 1
+2026-11-20 20:55:03,902 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1
+2026-11-20 20:55:03,902 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2026-11-20 20:55:03,977 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1
+2026-11-20 20:55:04,026 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1794615019286_0082
+2026-11-20 20:55:04,031 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2026-11-20 20:55:04,082 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1794615019286_0082
+2026-11-20 20:55:04,087 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://cm:8088/proxy/application_1794615019286_0082/
+2026-11-20 20:55:04,330 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1794615019286_0082
+2026-11-20 20:55:04,330 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases resultado
+2026-11-20 20:55:04,330 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: resultado[32,12] C:  R: 
+2026-11-20 20:55:21,478 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 87% complete
+2026-11-20 20:55:21,478 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1794615019286_0082]
+2026-11-20 20:55:29,494 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1794615019286_0082]
+2026-11-20 20:55:34,520 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:34,531 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:34,629 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:34,638 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:34,679 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:34,686 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:34,727 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2026-11-20 20:55:34,755 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.SimplePigStats - Script Statistics: 
+
+HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+2.10.0	0.18.0-SNAPSHOT	uhadoop	2026-11-20 20:51:42	2026-11-20 20:55:34	GROUP_BY,ORDER_BY,FILTER
+
+Success!
+
+Job Stats (time in seconds):
+JobId	Maps	Reduces	MaxMapTime	MinMapTime	AvgMapTime	MedianMapTime	MaxReduceTime	MinReduceTime	AvgReduceTime	MedianReducetime	Alias	Feature	Outputs
+job_1794615019286_0079	1	1	100	100	100	100	12	12	12	12	base,mes_prov,ordenes,por_mes_prov,validas	GROUP_BY,COMBINER	
+job_1794615019286_0080	1	1	9	9	9	9	9	9	9	9	ordenado,por_mes,top_mes	GROUP_BY	
+job_1794615019286_0081	1	1	6	6	6	6	6	6	6	6	resultado	SAMPLER	
+job_1794615019286_0082	1	1	6	6	6	6	5	5	5	5	resultado	ORDER_BY	/uhadoop2026/projects/grupo13/pig_mensual/ranking_mensual,
+
+Input(s):
+Successfully read 1856039 records (85430093 bytes) from: "/uhadoop2026/projects/grupo13/ordenes_limpias.tsv.bz2"
+
+Output(s):
+Successfully stored 120 records (6767 bytes) in: "/uhadoop2026/projects/grupo13/pig_mensual/ranking_mensual"
+
+Counters:
+Total records written : 120
+Total bytes written : 6767
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 0
+Total records proactively spilled: 0
+
+Job DAG:
+job_1794615019286_0079	->	job_1794615019286_0080,
+job_1794615019286_0080	->	job_1794615019286_0081,
+job_1794615019286_0081	->	job_1794615019286_0082,
+job_1794615019286_0082
+
+
+2026-11-20 20:55:34,760 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:34,766 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:34,808 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:34,813 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:34,851 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:34,858 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:34,907 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:34,915 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:34,966 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:34,975 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:35,031 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:35,038 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:35,102 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:35,115 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:35,167 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:35,174 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:35,220 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:35,226 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:35,284 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:35,290 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:35,344 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:35,355 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:35,412 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at cm/10.10.10.1:8032
+2026-11-20 20:55:35,420 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2026-11-20 20:55:35,468 [main] WARN  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Encountered Warning FIELD_DISCARDED_TYPE_CONVERSION_FAILED 3 time(s).
+2026-11-20 20:55:35,468 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+2026-11-20 20:55:35,518 [main] INFO  org.apache.pig.Main - Pig script completed in 3 minutes, 56 seconds and 624 milliseconds (236624 ms)
+
+real	3m59.656s
+user	0m31.445s
+sys	0m2.907s
